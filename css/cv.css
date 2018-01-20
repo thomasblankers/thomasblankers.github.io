@@ -5,7 +5,6 @@ body {
 }
 
 .home {
-  float: left;
   width: 11.6666666666%;
   min-height: 32px;
   margin-top: 11px;
@@ -24,6 +23,36 @@ body {
   height: 50px;
   margin-top: 25px;
   background-color: rgb(0, 0, 0);
+}
+
+.text {
+  float: left;
+}
+
+._button {
+  display: block;
+  float: left;
+  clear: both;
+  width: 11.6666666666%;
+  height: 166px;
+  margin: 29px 0 0 23.58203%;
+  border-radius: 3px;
+  background: url('../images/pdficon.jpg') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-size: 0.727em;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+._text {
+  clear: both;
+  margin: 18px 0 0 22%;
+  font-size: 0.727em;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
 }
 
 .home-1 {
