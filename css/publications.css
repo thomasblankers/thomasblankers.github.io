@@ -88,6 +88,7 @@ body {
   .text-2 {
     position: relative;
     z-index: 0;
+    width: 78%;
   }
 
   .menu_bar ._button-1 {
@@ -117,7 +118,7 @@ body {
 
 @media(max-width: 480px) {
   body {
-    font-size: 1em;
+    font-size: 0.875em;
   }
 
   .menu_bar {
@@ -132,7 +133,11 @@ body {
     position: relative;
     width: 93.4426229508%;
     margin-left: 3.17951%;
-    font-size: 0.75em;
+    font-size: 0.857em;
+  }
+
+  .text-1 {
+    font-size: 1.714em;
   }
 
   .text-2 {
@@ -140,7 +145,9 @@ body {
     float: right;
     z-index: 0;
     margin-top: 60px;
+    margin-right: 1%;
     margin-left: 0;
+    font-size: 14px;
   }
 
   .menu_bar ._button-1 {
@@ -179,6 +186,10 @@ body {
 }
 
 @media(max-width: 230px) {
+  body {
+    font-size: 0.75em;
+  }
+
   .menu_bar {
     left: 0;
     width: 29.5652173913%;
@@ -187,13 +198,19 @@ body {
   .menu_bar ._button {
     position: relative;
     margin-left: 3.17096%;
+    font-size: 1em;
+  }
+
+  .text-1 {
+    font-size: 2em;
   }
 
   .text-2 {
     position: relative;
     z-index: 0;
-    width: 70%;
-    margin-right: 1%;
+    width: 68%;
+    margin-right: 0.99864%;
+    font-size: 12px;
   }
 
   .menu_bar ._button-1 {
