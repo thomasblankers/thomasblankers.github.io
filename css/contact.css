@@ -1,7 +1,7 @@
 body {
   background-color: rgb(255, 255, 255);
-  font: 700 1.375em/1.38 Nobile;
-  color: rgb(255, 254, 254);
+  font: 400 1em/1.38 Nobile;
+  color: rgb(0, 0, 0);
 }
 
 .menu_bar {
@@ -15,32 +15,92 @@ body {
 }
 
 .text {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 59px;
-  background-color: rgb(255, 255, 255);
-  font: 1.091em/2 Oswald;
-  text-align: center;
   color: rgb(0, 0, 0);
 }
 
 ._button {
   display: block;
   float: left;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.menu_bar ._button {
   width: 11.6666666666%;
   height: 32px;
   margin-top: 7px;
-  border-radius: 3px;
   background-color: rgb(0, 0, 0);
-  font-size: 1em;
-  text-align: center;
+  font-size: 1.375em;
+  font-weight: 700;
   color: rgb(255, 254, 254);
 }
 
-._button:hover {
+.menu_bar ._button:hover {
   color: rgb(0, 106, 255);
+}
+
+.text-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 59px;
+  background-color: rgb(255, 255, 255);
+  font: 700 1.5em/2 Oswald;
+  text-align: center;
+}
+
+.text-2 {
+  position: relative;
+  float: left;
+  z-index: 8;
+  width: 80%;
+  min-height: 164px;
+  margin: 140px 0 0 10%;
+  font-size: 1em;
+}
+
+._button-7 {
+  position: relative;
+  clear: both;
+  z-index: 9;
+  width: 7.42%;
+  height: 45px;
+  margin: -23px 0 0 10%;
+  background: url('../images/Contactenos.jpg') rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+._button-8 {
+  position: relative;
+  z-index: 10;
+  width: 7.4166666666%;
+  height: 45px;
+  margin: -23px 0 0 4.16146%;
+  background: url('../images/Google_Scholar_logo.png') rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+._button-9 {
+  position: relative;
+  z-index: 11;
+  width: 7.4166666666%;
+  height: 45px;
+  margin: -23px 0 0 4.1237%;
+  background: url('../images/ResearchGate_Logo.png') rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
 }
 
 .menu_bar ._button-1 {
@@ -56,22 +116,38 @@ body {
 }
 
 @media(max-width: 900px) {
-  body {
-    font-size: 0.875em;
-  }
-
   .menu_bar {
     top: 41px;
     height: 39px;
   }
 
-  .text {
-    font-size: 1.714em;
+  ._button {
+    position: relative;
+    width: 11.875%;
+    height: 78px;
   }
 
   .menu_bar ._button {
     position: relative;
-    font-size: 14px;
+    font-size: 0.875em;
+  }
+
+  .text-2 {
+    position: relative;
+    z-index: 8;
+  }
+
+  ._button-7 {
+    z-index: 9;
+  }
+
+  ._button-8 {
+    z-index: 10;
+  }
+
+  ._button-9 {
+    z-index: 11;
+    margin-left: 4.12153%;
   }
 
   .menu_bar ._button-1 {
@@ -101,7 +177,7 @@ body {
 
 @media(max-width: 480px) {
   body {
-    font-size: 0.75em;
+    font-size: 1em;
   }
 
   .menu_bar {
@@ -112,15 +188,41 @@ body {
     border-radius: 5px;
   }
 
-  .text {
-    font-size: 2em;
+  ._button {
+    position: relative;
+    margin-top: -20px;
   }
 
   .menu_bar ._button {
     position: relative;
     width: 93.4426229508%;
     margin-left: 3.17951%;
-    font-size: 12px;
+    font-size: 0.75em;
+  }
+
+  .text-2 {
+    position: relative;
+    z-index: 8;
+    margin-top: 62px;
+    margin-left: 21.66667%;
+  }
+
+  ._button-7 {
+    z-index: 9;
+    height: 53px;
+    margin-left: 21.66667%;
+  }
+
+  ._button-8 {
+    z-index: 10;
+    height: 53px;
+    margin-left: 6.66667%;
+  }
+
+  ._button-9 {
+    z-index: 11;
+    height: 53px;
+    margin-left: 6.45833%;
   }
 
   .menu_bar ._button-1 {
@@ -164,9 +266,42 @@ body {
     width: 29.5652173913%;
   }
 
+  ._button {
+    position: relative;
+    width: 17.3913043478%;
+  }
+
   .menu_bar ._button {
     position: relative;
     margin-left: 3.17096%;
+  }
+
+  .text-2 {
+    position: relative;
+    z-index: 8;
+    margin-top: 63px;
+    margin-left: 35.32609%;
+  }
+
+  ._button-7 {
+    z-index: 9;
+    height: 57px;
+    margin-top: 22px;
+    margin-left: 35.32609%;
+  }
+
+  ._button-8 {
+    z-index: 10;
+    height: 57px;
+    margin-top: 22px;
+    margin-left: 6.08696%;
+  }
+
+  ._button-9 {
+    z-index: 11;
+    height: 57px;
+    margin-top: 22px;
+    margin-left: 6.40625%;
   }
 
   .menu_bar ._button-1 {
