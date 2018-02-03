@@ -81,7 +81,7 @@ body {
   margin-left: 2%;
 }
 
-@media(min-width: 200px) {
+@media(max-width: 800px) {
   .background {
     position: relative;
     z-index: 1;
