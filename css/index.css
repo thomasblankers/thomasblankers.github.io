@@ -73,19 +73,82 @@ body {
   margin-left: 10%;
 }
 
+.menu_bar ._button-3 {
+  margin-left: 2.33073%;
+}
+
+.menu_bar ._button-4 {
+  margin-left: 1.66536%;
+}
+
 .menu_bar ._button-2,
-.menu_bar ._button-3,
-.menu_bar ._button-4,
 .menu_bar ._button-5,
 .menu_bar ._button-6 {
   margin-left: 2%;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 900px) {
   .background {
     position: relative;
     z-index: 1;
-    height: 198px;
+  }
+
+  .menu_bar {
+    position: relative;
+    z-index: 8;
+  }
+
+  .summary {
+    position: relative;
+    z-index: 0;
+  }
+
+  ._text {
+    position: relative;
+    z-index: 9;
+  }
+
+  .menu_bar ._button {
+    position: relative;
+    font-size: 0.875em;
+  }
+
+  .menu_bar ._button-1 {
+    z-index: 2;
+  }
+
+  .menu_bar ._button-2 {
+    z-index: 3;
+  }
+
+  .menu_bar ._button-3 {
+    z-index: 4;
+    margin-left: 2%;
+  }
+
+  .menu_bar ._button-4 {
+    z-index: 5;
+    margin-left: 2%;
+  }
+
+  .menu_bar ._button-5 {
+    z-index: 6;
+  }
+
+  .menu_bar ._button-6 {
+    z-index: 7;
+  }
+}
+
+@media(max-width: 480px) {
+  body {
+    font-size: 1em;
+  }
+
+  .background {
+    position: relative;
+    z-index: 1;
+    height: 225px;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -106,14 +169,15 @@ body {
     z-index: 0;
     width: 77.0833333333%;
     margin-top: 0;
-    margin-left: 19.79167%;
+    margin-left: 19.58008%;
   }
 
   ._text {
     position: relative;
     z-index: 9;
     width: 100%;
-    margin-top: -189px;
+    margin-top: -215px;
+    margin-left: -1.0416700001%;
   }
 
   .menu_bar ._button {
@@ -159,17 +223,15 @@ body {
 }
 
 @media(max-width: 230px) {
-  body {
-    font-size: 1em;
-  }
-
   .background {
     position: relative;
     z-index: 1;
+    height: 145px;
   }
 
   .menu_bar {
-    left: 2.1739130434%;
+    top: 157px;
+    left: 1%;
     width: 26.5217391304%;
   }
 
@@ -177,16 +239,20 @@ body {
     position: relative;
     z-index: 0;
     width: 67.8260869565%;
-    margin-left: 29.13043%;
+    margin-top: 15px;
+    margin-left: 29.11685%;
   }
 
   ._text {
     position: relative;
     z-index: 9;
+    margin-top: -136px;
+    margin-left: 0;
   }
 
   .menu_bar ._button {
     position: relative;
+    margin-left: 3.17623%;
   }
 
   .menu_bar ._button-1 {
