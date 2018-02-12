@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>students</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,400|Raleway:700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/students-grid.css">
+  <link rel="stylesheet" href="css/students.css">
+  <link rel="stylesheet" href="SlickNav/dist/slicknav.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body class="body page-students clearfix">
+  <div class="container clearfix">
+    <div class="element element-1"></div>
+    <p class="text text-1"><span>The Shaw Lab</span></p>
+    <div class="element element-2"></div>
+    <div id="bar" class="element element-3"></div>
+    <ul id="menu" class="menu clearfix">
+      <p onClick="window.location='index.html';" class="text text-2"><a href="index.html">Home</a></p>
+      <p onClick="window.location='lab.html';" class="text text-3"><a href="lab.html">Lab</a></p>
+      <p onClick="window.location='research.html';" class="text text-4"><a href="research.html">Research</a></p>
+      <p onClick="window.location='publications.html';" class="text text-5"><a href="publications.html">Publications</a></p>
+      <p onClick="window.location='speciation.html';" class="text text-6"><a href="speciation.html">Speciation Room</a></p>
+      <p onClick="window.location='students.html';" class="text text-7"><a href="students.html">For Students</a></p>
+      <p onClick="window.location='extras.html';" class="text text-8"><a href="extras.html">Extras</a></p>
+    </ul>
+    <div class="element element-4"></div>
+  </div>
+  <p class="text text-9">Come join the lab it is awesome</p>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="SlickNav/dist/jquery.slicknav.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#menu').slicknav({
+        label:'',
+        prependTo:'#bar',
+        closeOnClick:'true', // Close menu when a link is clicked.
+		easingOpen: 'swing',
+		easingClose: 'swing'
+});
+});
+</script>
+
+</body>
+</html>
