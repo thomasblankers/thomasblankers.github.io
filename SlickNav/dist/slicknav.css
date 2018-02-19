@@ -78,7 +78,7 @@
 .slicknav_menu {
     position: relative;
     width: 120px; /* this option sets the width of the fold out menu */
-	z-index: 2 /* this makes sure it is always on top. Update if other elements in the menu have position 'relative' and a z-index assigned. */
+	z-index: 99 /* this makes sure it is always on top. Update if other elements in the menu have position 'relative' and a z-index assigned. */
 }  
 
 .slicknav_menu {

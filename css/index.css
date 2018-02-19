@@ -364,7 +364,6 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   background-color: transparent;
-  text-shadow: none;
   font-family: inherit;
   font-size: inherit;
   letter-spacing: inherit;
@@ -389,7 +388,6 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   background-color: transparent;
-  text-shadow: none;
   font-family: inherit;
   font-style: inherit;
   font-size: inherit;
@@ -417,7 +415,6 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   background-color: transparent;
-  text-shadow: none;
   text-decoration: none;
   letter-spacing: inherit;
   word-spacing: inherit;
@@ -489,12 +486,16 @@ body {
     z-index: 12;
   }
 
+  .container .element-4 {
+    height: 350px;
+  }
+
   .menu .text-3 {
     margin-left: 2.11765%;
   }
 
   .menu .text-5 {
-    margin-left: 3.52941%;
+    margin-left: 3.52574%;
   }
 
   .menu .text-4,
@@ -513,7 +514,7 @@ body {
   }
 }
 
-@media(max-width: 750px) {
+@media(max-width: 850px) {
   body {
     font-size: 1em;
   }
@@ -533,7 +534,7 @@ body {
     position: relative;
     z-index: 12;
     height: 392px;
-    margin-left: 2.8%;
+    margin-left: 2.79596%;
   }
 
   .container .element-2 {
@@ -591,19 +592,19 @@ body {
     position: relative;
     z-index: 4;
     margin-top: 12px;
-    margin-left: 2.9022199999%;
+    margin-left: 2.86315%;
   }
 
   .menu .text-4 {
     position: relative;
     z-index: 9;
-    margin-left: 6.0128%;
+    margin-left: 5.98897%;
   }
 
   .menu .text-7 {
     clear: both;
     margin-top: 7px;
-    margin-left: 2.9022199999%;
+    margin-left: 2.86315%;
   }
 
   .menu .text-5,
@@ -612,7 +613,7 @@ body {
   .menu .text-9 {
     clear: both;
     margin-top: 8px;
-    margin-left: 2.9022199999%;
+    margin-left: 2.86315%;
   }
 
   .text-10 {
@@ -636,6 +637,7 @@ body {
     position: relative;
     z-index: 12;
     height: 288px;
+    margin-left: 2.8%;
   }
 
   .container .element-2 {
@@ -652,7 +654,7 @@ body {
     bottom: 0;
     right: 5.6%;
     width: 21.8%;
-    height: 311px;
+    height: 250px;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -714,7 +716,7 @@ body {
 .slicknav_menu {
 display: none;
 }
- @media screen and (max-width: 750px) {
+ @media screen and (max-width: 850px) {
 .js #menu {
 display: none;
 }

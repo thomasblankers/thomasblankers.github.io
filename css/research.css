@@ -180,19 +180,16 @@ body {
   margin-left: 2.05576%;
 }
 
-.text-4 {
+.text-6 {
   margin-left: 3.62592%;
 }
 
 .text-3,
+.text-4,
 .text-5,
-.text-6,
-.text-7 {
-  margin-left: 3.52788%;
-}
-
+.text-7,
 .text-8 {
-  margin-left: 3.51869%;
+  margin-left: 3.52788%;
 }
 
 .text-9 {
@@ -294,8 +291,6 @@ body {
   }
 
   .container .element-2 {
-    position: relative;
-    z-index: 20;
     margin-top: 115px;
   }
 
@@ -305,8 +300,6 @@ body {
   }
 
   .container .element-4 {
-    position: relative;
-    z-index: 18;
     margin-top: 55px;
   }
 
@@ -353,19 +346,16 @@ body {
     margin-left: 2.11765%;
   }
 
-  .menu .text-5 {
-    margin-left: 3.52757%;
+  .menu .text-6 {
+    margin-left: 3.52574%;
   }
 
   .menu .text-3,
   .menu .text-4,
-  .menu .text-6,
-  .menu .text-7 {
-    margin-left: 3.64706%;
-  }
-
+  .menu .text-5,
+  .menu .text-7,
   .menu .text-8 {
-    margin-left: 3.59007%;
+    margin-left: 3.64706%;
   }
 
   .text-10 {
@@ -395,76 +385,47 @@ body {
   }
 }
 
-@media(max-width: 750px) {
+@media(max-width: 850px) {
   body {
     font-size: 1em;
   }
 
   .container .menu {
-    top: 153px;
     left: 0;
-    right: auto;
-    width: 13.9979166666%;
-    height: 254px;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .container .element-1 {
     position: relative;
     z-index: 22;
-    margin-left: 8.32917%;
-  }
-
-  .container .element-2 {
-    position: relative;
-    float: left;
-    clear: both;
-    z-index: 20;
-    margin-top: -4px;
-    margin-right: 0;
-    margin-left: 5%;
-  }
-
-  .container .element-3 {
-    clear: none;
-    margin-top: 14px;
-    margin-left: 12%;
-  }
-
-  .container .element-4 {
-    position: relative;
-    float: left;
-    clear: both;
-    z-index: 18;
-    margin-top: 50px;
-    margin-right: 0;
-    margin-left: 5%;
+    margin-left: 8.3272099999%;
   }
 
   .container .element-5 {
-    margin-left: 7.625%;
+    margin-left: 7.61949%;
   }
 
   .container .element-6 {
     margin-top: 53px;
-    margin-left: 7.3749%;
+    margin-left: 7.37275%;
   }
 
   .container .text-1 {
     position: relative;
     z-index: 21;
-    margin-top: 20px;
-    margin-left: 0.89167%;
   }
 
   .container .text-11 {
     width: 522px;
-    margin-left: 7.66667%;
+    margin-left: 7.66085%;
   }
 
   .container .text-14 {
     width: 542px;
     margin-top: 30px;
-    margin-left: 7.41351%;
+    margin-left: 7.40909%;
   }
 
   .container-2 {
@@ -485,31 +446,19 @@ body {
   }
 
   .menu .text-2 {
-    position: relative;
-    z-index: 10;
-    margin-top: 12px;
-    margin-left: 2.9022199999%;
-  }
-
-  .menu .text-3 {
-    position: relative;
-    z-index: 15;
-    margin-left: 6.0128%;
+    margin-left: 2.11289%;
   }
 
   .menu .text-6 {
-    clear: both;
-    margin-top: 7px;
-    margin-left: 2.9022199999%;
+    margin-left: 3.52509%;
   }
 
+  .menu .text-3,
   .menu .text-4,
   .menu .text-5,
   .menu .text-7,
   .menu .text-8 {
-    clear: both;
-    margin-top: 8px;
-    margin-left: 2.9022199999%;
+    margin-left: 3.64187%;
   }
 
   .text-10 {
@@ -536,15 +485,16 @@ body {
     position: relative;
     z-index: 9;
   }
-
-  .text span {
-    font-size: 2.375em;
-  }
 }
 
 @media(max-width: 500px) {
   .container .menu {
+    top: 153px;
+    left: 0;
+    right: 0;
     width: 13.996875%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .container .element-1 {
@@ -555,17 +505,32 @@ body {
 
   .container .element-2 {
     position: relative;
+    float: left;
+    clear: both;
     z-index: 20;
     margin-top: -19px;
+    margin-right: 0;
+    margin-left: 5%;
   }
 
   .container .element-3 {
+    clear: none;
     margin-top: 6px;
+    margin-left: 12%;
   }
 
   .container .element-4 {
     position: relative;
+    float: left;
+    clear: both;
     z-index: 18;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+
+  .container .element-5 {
+    margin-left: 7.625%;
   }
 
   .container .element-6 {
@@ -576,6 +541,7 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 21;
+    margin-top: 20px;
     margin-left: 0.89375%;
   }
 
@@ -605,23 +571,27 @@ body {
   }
 
   .menu .text-2 {
-    position: relative;
-    z-index: 10;
+    margin-top: 12px;
     margin-left: 2.88011%;
   }
 
   .menu .text-3 {
-    position: relative;
     clear: both;
-    z-index: 15;
     margin-left: 5.98348%;
+  }
+
+  .menu .text-6 {
+    clear: both;
+    margin-top: 7px;
+    margin-left: 2.88011%;
   }
 
   .menu .text-4,
   .menu .text-5,
-  .menu .text-6,
   .menu .text-7,
   .menu .text-8 {
+    clear: both;
+    margin-top: 8px;
     margin-left: 2.88011%;
   }
 
@@ -656,7 +626,7 @@ body {
 .slicknav_menu {
 display: none;
 }
- @media screen and (max-width: 750px) {
+ @media screen and (max-width: 850px) {
 .js #menu {
 display: none;
 }

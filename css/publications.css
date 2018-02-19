@@ -41,6 +41,10 @@ body {
   font-size: 1em;
 }
 
+.text-9 p {
+  margin-bottom: 1em;
+}
+
 .element-1 {
   position: relative;
   float: left;
@@ -86,22 +90,19 @@ body {
 }
 
 .text-2 {
-  margin-left: 2.05729%;
+  margin-left: 2.05576%;
 }
 
-.text-4 {
+.text-6 {
   margin-left: 3.62592%;
 }
 
 .text-3,
+.text-4,
 .text-5,
-.text-6,
-.text-7 {
-  margin-left: 3.52788%;
-}
-
+.text-7,
 .text-8 {
-  margin-left: 3.52175%;
+  margin-left: 3.52788%;
 }
 
 .text-9 {
@@ -109,7 +110,7 @@ body {
   z-index: 0;
   width: 82.1666666666%;
   height: 4243px;
-  margin: 222px 0 0 8.66667%;
+  margin: 250px 0 0 8%;
   color: rgb(0, 0, 0);
 }
 
@@ -173,10 +174,6 @@ body {
   white-space: normal;
 }
 
-.text-1 span:hover {
-  font-size: NaNem;
-}
-
 .text-2 a,
 .text-3 a,
 .text-4 a,
@@ -216,8 +213,6 @@ body {
   }
 
   .container .element-2 {
-    position: relative;
-    z-index: 11;
     margin-top: 115px;
   }
 
@@ -227,8 +222,6 @@ body {
   }
 
   .container .element-4 {
-    position: relative;
-    z-index: 9;
     margin-top: 55px;
   }
 
@@ -241,133 +234,80 @@ body {
     margin-left: 2.11765%;
   }
 
-  .menu .text-4 {
-    margin-left: 3.52941%;
+  .menu .text-6 {
+    margin-left: 3.52574%;
   }
 
   .menu .text-3,
+  .menu .text-4,
   .menu .text-5,
-  .menu .text-6,
-  .menu .text-7 {
-    margin-left: 3.64706%;
-  }
-
+  .menu .text-7,
   .menu .text-8 {
-    margin-left: 3.59559%;
+    margin-left: 3.64706%;
   }
 
   .text-9 {
     position: relative;
     z-index: 0;
-    margin-left: 8.66563%;
-  }
-
-  .text-1 span {
-    font-size: 2.813em;
+    width: 82.1656249999%;
+    margin-top: 200px;
   }
 }
 
-@media(max-width: 750px) {
+@media(max-width: 850px) {
   body {
     font-size: 1em;
   }
 
   .container .menu {
-    top: 153px;
     left: 0;
-    right: auto;
-    width: 13.9979166666%;
-    height: 254px;
-  }
-
-  .text {
-    margin-left: 8.66667%;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .container .element-1 {
     position: relative;
     z-index: 13;
-    margin-left: 8.32917%;
-  }
-
-  .container .element-2 {
-    position: relative;
-    float: left;
-    clear: both;
-    z-index: 11;
-    margin-top: -4px;
-    margin-right: 0;
-    margin-left: 5%;
-  }
-
-  .container .element-3 {
-    clear: none;
-    margin-top: 14px;
-    margin-left: 12%;
-  }
-
-  .container .element-4 {
-    position: relative;
-    float: left;
-    clear: both;
-    z-index: 9;
-    margin-top: 50px;
-    margin-right: 0;
-    margin-left: 5%;
+    margin-left: 8.3272099999%;
   }
 
   .container .text-1 {
     position: relative;
     z-index: 12;
-    margin-top: 20px;
-    margin-left: 0.89167%;
   }
 
   .menu .text-2 {
-    position: relative;
-    z-index: 1;
-    margin-top: 12px;
-    margin-left: 2.9022199999%;
-  }
-
-  .menu .text-3 {
-    position: relative;
-    z-index: 6;
-    margin-left: 6.0128%;
+    margin-left: 2.11289%;
   }
 
   .menu .text-6 {
-    clear: both;
-    margin-top: 7px;
-    margin-left: 2.9022199999%;
+    margin-left: 3.52509%;
   }
 
+  .menu .text-3,
   .menu .text-4,
   .menu .text-5,
   .menu .text-7,
   .menu .text-8 {
-    clear: both;
-    margin-top: 8px;
-    margin-left: 2.9022199999%;
+    margin-left: 3.64187%;
   }
 
   .text-9 {
     position: relative;
     z-index: 0;
-  }
-
-  .text-1 span {
-    font-size: 2.375em;
+    width: 82.1654411764%;
   }
 }
 
 @media(max-width: 500px) {
   .container .menu {
+    top: 153px;
+    left: 0;
+    right: 0;
     width: 13.996875%;
-  }
-
-  .text {
-    margin-left: 8.66563%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .container .element-1 {
@@ -377,50 +317,63 @@ body {
   }
 
   .container .element-2 {
-    position: relative;
-    z-index: 11;
+    float: left;
+    clear: both;
     margin-top: -19px;
+    margin-right: 0;
+    margin-left: 5%;
   }
 
   .container .element-3 {
+    clear: none;
     margin-top: 6px;
+    margin-left: 12%;
   }
 
   .container .element-4 {
-    position: relative;
-    z-index: 9;
+    float: left;
+    clear: both;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: 5%;
   }
 
   .container .text-1 {
     position: relative;
     z-index: 12;
+    margin-top: 20px;
     margin-left: 0.89375%;
   }
 
   .menu .text-2 {
-    position: relative;
-    z-index: 1;
+    margin-top: 12px;
     margin-left: 2.88011%;
   }
 
   .menu .text-3 {
-    position: relative;
     clear: both;
-    z-index: 6;
     margin-left: 5.98348%;
+  }
+
+  .menu .text-6 {
+    clear: both;
+    margin-top: 7px;
+    margin-left: 2.88011%;
   }
 
   .menu .text-4,
   .menu .text-5,
-  .menu .text-6,
   .menu .text-7,
   .menu .text-8 {
+    clear: both;
+    margin-top: 8px;
     margin-left: 2.88011%;
   }
 
   .text-9 {
     position: relative;
     z-index: 0;
+    width: 82.1656249999%;
   }
 
   .text-1 span {
@@ -431,7 +384,7 @@ body {
 .slicknav_menu {
 display: none;
 }
- @media screen and (max-width: 750px) {
+ @media screen and (max-width: 850px) {
 .js #menu {
 display: none;
 }
