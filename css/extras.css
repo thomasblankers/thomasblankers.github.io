@@ -145,7 +145,7 @@ body {
 .text-1 {
   position: relative;
   z-index: 17;
-  margin: 35px 0 0 0.96875%;
+  margin: 20px 0 0 0.88672%;
   font-family: Helvetica;
   color: rgb(0, 0, 0);
 }
@@ -312,6 +312,7 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 17;
+    margin-left: 0.89063%;
   }
 
   .menu .text-2 {
@@ -393,6 +394,7 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 17;
+    margin-left: 0.89338%;
   }
 
   .menu .text-2 {
@@ -494,7 +496,6 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 17;
-    margin-top: 20px;
     margin-left: 0.89375%;
   }
 

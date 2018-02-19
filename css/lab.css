@@ -1,99 +1,52 @@
 body {
   background-color: rgb(255, 255, 255);
-  font: 400 1.375em/1.38 Helvetica;
+  font: 400 1.125em/1.38 Helvetica;
   color: rgb(0, 0, 0);
 }
 
-.container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 23;
-  width: 100%;
-  height: 204px;
-  background-color: rgb(255, 255, 255);
-}
-
-.glenn {
-  position: relative;
-  float: left;
-  clear: both;
-  z-index: 3;
-  width: 15%;
-  height: 175px;
-  margin: 50px 0 0 7.125%;
-  background: url('../images/Glenn_round.png') rgb(255, 255, 255);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left top;
-}
-
-.glennresearch {
-  position: relative;
-  float: left;
-  z-index: 2;
-  width: 69.9986979166%;
-  min-height: 168px;
-  margin: 50px 0 0 1.9987%;
-  font-size: 1em;
-  color: rgb(0, 0, 0);
-}
-
-.hayden {
-  position: relative;
-  float: left;
-  clear: both;
-  z-index: 1;
-  width: 15%;
-  height: 175px;
-  margin: 50px 0 0 7.125%;
-  background: url('../images/hayden_round.png') rgb(255, 255, 255);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left top;
-}
-
-.haydenresearch {
-  position: relative;
-  float: left;
-  z-index: 0;
-  width: 69.9986979166%;
-  min-height: 168px;
-  margin: 50px 0 0 1.9987%;
-  font-size: 1em;
-  color: rgb(0, 0, 0);
-}
-
-.glennresearch p,
-.haydenresearch p,
-.kerryresearch p,
-.mingziresearch p,
-.thomasresearch p {
+.container-2 p,
+.container-3 p,
+.container-4 p,
+.container-5 p,
+.container-6 p {
   margin-bottom: 1em;
 }
 
-.kerry {
-  position: relative;
+.glennresearch {
   float: left;
-  z-index: 9;
-  width: 15%;
-  height: 175px;
-  margin: 234px 0 0 7.11849%;
-  background: url('../images/Kerry_round.png') rgb(255, 255, 255);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left top;
-}
-
-.kerryresearch {
-  position: relative;
-  float: left;
-  z-index: 8;
-  width: 70%;
-  min-height: 168px;
-  margin: 241px 0 0 2.00391%;
+  width: 75%;
+  min-height: 138px;
+  margin-left: 1.98806%;
   font-size: 1em;
   color: rgb(0, 0, 0);
+}
+
+.glenn,
+.hayden,
+.mingzi,
+.thomas {
+  display: block;
+  float: left;
+  width: 18%;
+  height: auto;
+  overflow: hidden;
+}
+
+.haydenresearch {
+  float: left;
+  width: 75%;
+  min-height: 138px;
+  margin-left: 1.78163%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.kerry {
+  display: block;
+  float: left;
+  width: 18.2926829268%;
+  height: auto;
+  overflow: hidden;
 }
 
 .menu {
@@ -101,7 +54,7 @@ body {
   top: 153px;
   left: 0;
   right: 0;
-  z-index: 17;
+  z-index: 22;
   width: 85%;
   height: 27px;
   margin: 0 auto;
@@ -119,65 +72,88 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-.mingzi {
-  position: relative;
-  float: left;
-  clear: both;
-  z-index: 7;
-  width: 15%;
-  height: 175px;
-  margin: 50px 0 0 7.1237%;
-  background: url('../images/Mingzi_round.png') rgb(255, 255, 255);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left top;
-}
-
 .mingziresearch {
-  position: relative;
   float: left;
-  z-index: 6;
-  width: 70%;
-  min-height: 168px;
-  margin: 50px 0 0 2%;
+  width: 75.1527494908%;
+  min-height: 138px;
+  margin-left: 1.96029%;
   font-size: 1em;
   color: rgb(0, 0, 0);
 }
 
 .text {
   float: left;
-  font-size: 0.727em;
+  font-size: 0.889em;
 }
 
-.thomas {
+.kerryresearch,
+.thomasresearch {
+  float: left;
+  width: 75%;
+  min-height: 138px;
+  margin-left: 2.43744%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.container-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 28;
+  width: 100%;
+  height: 204px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container-2 {
+  position: relative;
+  float: left;
+  z-index: 14;
+  width: 82%;
+  margin: 250px 0 0 8%;
+}
+
+.container-3 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 11;
+  width: 81.8333333333%;
+  margin: 43px 0 0 8%;
+}
+
+.container-4 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 8;
+  width: 82%;
+  margin: 50px 0 0 8%;
+}
+
+.container-5 {
   position: relative;
   float: left;
   clear: both;
   z-index: 5;
-  width: 15%;
-  height: 175px;
-  margin: 70px 0 0 7.11719%;
-  background: url('../images/Thomasd_round.png') rgb(255, 255, 255);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left top;
+  width: 82%;
+  margin: 50px 0 0 8%;
 }
 
-.thomasresearch {
+.container-6 {
   position: relative;
   float: left;
-  z-index: 4;
-  width: 70%;
-  min-height: 168px;
-  margin: 70px 0 0 2.00521%;
-  font-size: 1em;
-  color: rgb(0, 0, 0);
+  clear: both;
+  z-index: 2;
+  width: 82%;
+  margin: 50px 0 0 8%;
 }
 
 .element-1 {
   position: relative;
   float: left;
-  z-index: 22;
+  z-index: 27;
   width: 7.5807291666%;
   height: 84px;
   margin: 20px 0 0 8.33073%;
@@ -212,8 +188,8 @@ body {
 
 .text-1 {
   position: relative;
-  z-index: 21;
-  margin: 35px 0 0 0.96875%;
+  z-index: 26;
+  margin: 20px 0 0 0.88672%;
   color: rgb(0, 0, 0);
 }
 
@@ -236,7 +212,8 @@ body {
 .glennresearch span,
 .haydenresearch span,
 .kerryresearch span,
-.mingziresearch span {
+.mingziresearch span,
+.thomasresearch span {
   border-top-width: 0;
   border-right-width: 0;
   border-bottom-width: 0;
@@ -263,10 +240,12 @@ body {
   white-space: normal;
 }
 
-.kerryresearch a,
-.kerryresearch em,
-.mingziresearch a,
-.mingziresearch em {
+.glennresearch a,
+.glennresearch strong,
+.haydenresearch a,
+.haydenresearch strong,
+.thomasresearch a,
+.thomasresearch strong {
   border-top-width: 0;
   border-right-width: 0;
   border-bottom-width: 0;
@@ -286,35 +265,7 @@ body {
   text-decoration: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
-  color: inherit;
-  opacity: 1;
-  word-break: normal;
-  word-wrap: normal;
-  white-space: normal;
-}
-
-.kerryresearch strong,
-.mingziresearch strong {
-  border-top-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-color: transparent;
-  border-style: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  background-color: transparent;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: inherit;
-  word-spacing: inherit;
-  color: inherit;
+  color: #0e5f97;
   opacity: 1;
   word-break: normal;
   word-wrap: normal;
@@ -358,7 +309,7 @@ body {
   background-color: transparent;
   font-family: Raleway;
   font-style: inherit;
-  font-size: 2.045em;
+  font-size: 2.813em;
   font-weight: 700;
   text-transform: inherit;
   text-decoration: none;
@@ -369,6 +320,10 @@ body {
   word-break: normal;
   word-wrap: normal;
   white-space: normal;
+}
+
+.text span:hover {
+  font-size: NaNem;
 }
 
 .text-1 a {
@@ -392,8 +347,28 @@ body {
 }
 
 @media(max-width: 1000px) {
-  body {
-    font-size: 1.125em;
+  .container .glennresearch {
+    margin-left: 1.875%;
+  }
+
+  .container .glenn,
+  .container .hayden,
+  .container .mingzi,
+  .container .thomas {
+    height: auto;
+  }
+
+  .container .haydenresearch {
+    margin-left: 1.77973%;
+  }
+
+  .container .kerry {
+    height: auto;
+    margin-left: -0.00191%;
+  }
+
+  .container .kerryresearch {
+    margin-left: 2.43712%;
   }
 
   .container .menu {
@@ -404,95 +379,17 @@ body {
     margin-left: auto;
   }
 
-  .glenn {
-    position: relative;
-    z-index: 3;
-    height: 150px;
-    margin-top: 84px;
-    margin-left: 11.26563%;
+  .container .mingziresearch {
+    margin-left: 2.19579%;
   }
 
-  .glennresearch {
-    position: relative;
-    z-index: 2;
-    width: 70%;
-    margin-top: 84px;
-    margin-left: 2.53438%;
-    font-size: 18px;
-  }
-
-  .hayden {
-    position: relative;
-    z-index: 1;
-    height: 150px;
-    margin-top: 78px;
-    margin-left: 11.26563%;
-  }
-
-  .haydenresearch {
-    position: relative;
-    z-index: 0;
-    width: 70%;
-    margin-top: 78px;
-    margin-left: 2.53438%;
-    font-size: 18px;
-  }
-
-  .kerry {
-    position: relative;
-    z-index: 9;
-    height: 150px;
-    margin-top: 220px;
-    margin-left: 11.2625%;
-  }
-
-  .kerryresearch {
-    position: relative;
-    z-index: 8;
-    margin-top: 220px;
-    margin-left: 2.5375%;
-    font-size: 18px;
-  }
-
-  .menu .text {
-    font-size: 0.889em;
-  }
-
-  .mingzi {
-    position: relative;
-    z-index: 7;
-    height: 150px;
-    margin-top: 92px;
-    margin-left: 11.26719%;
-  }
-
-  .mingziresearch {
-    position: relative;
-    z-index: 6;
-    margin-top: 92px;
-    margin-left: 2.52969%;
-    font-size: 18px;
-  }
-
-  .thomas {
-    position: relative;
-    z-index: 5;
-    height: 150px;
-    margin-top: 71px;
-    margin-left: 11.26563%;
-  }
-
-  .thomasresearch {
-    position: relative;
-    z-index: 4;
-    margin-top: 71px;
-    margin-left: 2.53438%;
-    font-size: 18px;
+  .container .thomasresearch {
+    margin-left: 1.99886%;
   }
 
   .container .element-1 {
     position: relative;
-    z-index: 22;
+    z-index: 27;
     margin-left: 8.32969%;
   }
 
@@ -511,8 +408,37 @@ body {
 
   .container .text-1 {
     position: relative;
-    z-index: 21;
-    font-size: 0.889em;
+    z-index: 26;
+    margin-left: 0.89063%;
+  }
+
+  .container-2 {
+    position: relative;
+    z-index: 14;
+    margin-top: 228px;
+  }
+
+  .container-3 {
+    position: relative;
+    z-index: 11;
+    width: 81.8328125%;
+    margin-top: 50px;
+  }
+
+  .container-4 {
+    position: relative;
+    z-index: 8;
+    margin-top: 88px;
+  }
+
+  .container-5 {
+    position: relative;
+    z-index: 5;
+  }
+
+  .container-6 {
+    position: relative;
+    z-index: 2;
   }
 
   .menu .text-2 {
@@ -532,13 +458,41 @@ body {
   }
 
   .text span {
-    font-size: 2.5em;
+    font-size: 2.813em;
   }
 }
 
 @media(max-width: 850px) {
   body {
-    font-size: 0.938em;
+    font-size: 1em;
+  }
+
+  .container .glennresearch {
+    margin-left: 1.90773%;
+    font-size: 16px;
+  }
+
+  .container .glenn,
+  .container .hayden,
+  .container .mingzi,
+  .container .thomas {
+    height: auto;
+  }
+
+  .container .haydenresearch {
+    margin-left: 1.89876%;
+    font-size: 16px;
+  }
+
+  .container .kerry {
+    width: 18%;
+    height: auto;
+    margin-left: -0.07622%;
+  }
+
+  .container .kerryresearch {
+    margin-left: 2.4323%;
+    font-size: 16px;
   }
 
   .container .menu {
@@ -548,105 +502,58 @@ body {
     margin-left: auto;
   }
 
-  .glenn {
-    position: relative;
-    z-index: 3;
-    width: 14.9981617647%;
-    height: 125px;
-    margin-top: 25px;
-    margin-left: 6.86949%;
+  .container .mingziresearch {
+    margin-left: 2.45696%;
+    font-size: 16px;
   }
 
-  .glennresearch {
-    position: relative;
-    z-index: 2;
-    width: 69.9981617647%;
-    margin-top: 25px;
-    margin-left: 2.01103%;
-    font-size: 15px;
-  }
-
-  .hayden {
-    position: relative;
-    z-index: 1;
-    width: 14.9981617647%;
-    height: 125px;
-    margin-top: 25px;
-    margin-left: 6.86949%;
-  }
-
-  .haydenresearch {
-    position: relative;
-    z-index: 0;
-    width: 69.9981617647%;
-    margin-top: 25px;
-    margin-left: 2.01287%;
-    font-size: 15px;
-  }
-
-  .kerry {
-    position: relative;
-    z-index: 9;
-    height: 115px;
-    margin-top: 218px;
-    margin-left: 6.87684%;
-  }
-
-  .kerryresearch {
-    position: relative;
-    z-index: 8;
-    width: 69.9981617647%;
-    margin-top: 218px;
-    margin-left: 2.00184%;
-    font-size: 15px;
+  .container .thomasresearch {
+    margin-left: 2.05793%;
+    font-size: 16px;
   }
 
   .menu .text {
-    font-size: 1.067em;
-  }
-
-  .mingzi {
-    position: relative;
-    z-index: 7;
-    height: 115px;
-    margin-top: 25px;
-    margin-left: 6.87868%;
-  }
-
-  .mingziresearch {
-    position: relative;
-    z-index: 6;
-    margin-top: 25px;
-    margin-left: 1.99449%;
-    font-size: 15px;
-  }
-
-  .thomas {
-    position: relative;
-    z-index: 5;
-    height: 115px;
-    margin-top: 25px;
-    margin-left: 6.87868%;
-  }
-
-  .thomasresearch {
-    position: relative;
-    z-index: 4;
-    margin-top: 25px;
-    margin-left: 2%;
-    font-size: 15px;
+    font-size: 1em;
   }
 
   .container .element-1 {
     position: relative;
-    z-index: 22;
+    z-index: 27;
     margin-left: 8.3272099999%;
   }
 
   .container .text-1 {
     position: relative;
-    z-index: 21;
-    font-size: 1.067em;
+    z-index: 26;
+    margin-left: 0.88971%;
+    font-size: 1em;
+  }
+
+  .container-2 {
+    position: relative;
+    z-index: 14;
+  }
+
+  .container-3 {
+    position: relative;
+    z-index: 11;
+    width: 82%;
+  }
+
+  .container-4 {
+    position: relative;
+    z-index: 8;
+    margin-top: 50px;
+  }
+
+  .container-5 {
+    position: relative;
+    z-index: 5;
+  }
+
+  .container-6 {
+    position: relative;
+    z-index: 2;
   }
 
   .menu .text-2 {
@@ -664,10 +571,6 @@ body {
   .menu .text-8 {
     margin-left: 3.64187%;
   }
-
-  .text span {
-    font-size: 3em;
-  }
 }
 
 @media(max-width: 500px) {
@@ -675,107 +578,59 @@ body {
     font-size: 0.688em;
   }
 
+  .container .glennresearch {
+    margin-left: 1.01372%;
+    font-size: 11px;
+  }
+
+  .container .glenn,
+  .container .hayden,
+  .container .mingzi,
+  .container .thomas {
+    height: auto;
+  }
+
+  .container .haydenresearch {
+    margin-left: 1.89787%;
+    font-size: 11px;
+  }
+
+  .container .kerry {
+    height: auto;
+    margin-left: 0;
+  }
+
+  .container .kerryresearch {
+    margin-left: 1.98933%;
+    font-size: 11px;
+  }
+
   .container .menu {
-    top: 154px;
-    left: 0;
-    right: 0;
-    width: 14%;
-    height: 264px;
-    margin-right: auto;
-    margin-left: auto;
+    top: 104px;
+    left: 42px;
+    right: auto;
+    width: 86.6%;
   }
 
-  .glenn {
-    position: relative;
-    z-index: 3;
-    width: 15%;
-    height: 75px;
-    margin-top: 5px;
-    margin-left: 5.41563%;
-  }
-
-  .glennresearch {
-    position: relative;
-    z-index: 2;
-    width: 70%;
-    margin-top: 5px;
-    margin-left: 2.00313%;
+  .container .mingziresearch {
+    width: 79.7560975609%;
+    margin-left: 2.22561%;
     font-size: 11px;
   }
 
-  .hayden {
-    position: relative;
-    z-index: 1;
-    width: 15%;
-    height: 75px;
-    margin-top: -33px;
-    margin-left: 5.41563%;
-  }
-
-  .haydenresearch {
-    position: relative;
-    z-index: 0;
-    width: 70%;
-    margin-top: -33px;
-    margin-left: 3.00625%;
-    font-size: 11px;
-  }
-
-  .kerry {
-    position: relative;
-    z-index: 9;
-    height: 75px;
-    margin-top: 227px;
-    margin-left: 5.41875%;
-  }
-
-  .kerryresearch {
-    position: relative;
-    z-index: 8;
-    width: 70%;
-    margin-top: 227px;
-    margin-left: 1.99688%;
+  .container .thomasresearch {
+    margin-left: 1.70351%;
     font-size: 11px;
   }
 
   .menu .text {
+    position: relative;
     font-size: 1.455em;
-  }
-
-  .mingzi {
-    position: relative;
-    z-index: 7;
-    height: 75px;
-    margin-top: 5px;
-    margin-left: 5.41875%;
-  }
-
-  .mingziresearch {
-    position: relative;
-    z-index: 6;
-    margin-top: 5px;
-    margin-left: 2%;
-    font-size: 11px;
-  }
-
-  .thomas {
-    position: relative;
-    z-index: 5;
-    height: 75px;
-    margin-top: 5px;
-    margin-left: 5.42188%;
-  }
-
-  .thomasresearch {
-    position: relative;
-    z-index: 4;
-    margin-top: 5px;
-    font-size: 11px;
   }
 
   .container .element-1 {
     position: relative;
-    z-index: 22;
+    z-index: 27;
     margin-left: 8.32813%;
   }
 
@@ -783,23 +638,23 @@ body {
     position: relative;
     float: left;
     clear: both;
-    z-index: 20;
+    z-index: 25;
     margin-top: -19px;
     margin-right: 0;
     margin-left: 5%;
   }
 
   .container .element-3 {
+    position: relative;
     clear: none;
+    z-index: 24;
     margin-top: 6px;
     margin-left: 12%;
   }
 
   .container .element-4 {
-    position: relative;
     float: left;
     clear: both;
-    z-index: 18;
     margin-top: 50px;
     margin-right: 0;
     margin-left: 5%;
@@ -807,39 +662,86 @@ body {
 
   .container .text-1 {
     position: relative;
-    z-index: 21;
-    margin-top: 20px;
+    z-index: 26;
     margin-left: 0.89375%;
     font-size: 1.455em;
   }
 
+  .container-2 {
+    position: relative;
+    z-index: 14;
+    margin-left: 7%;
+  }
+
+  .container-3 {
+    position: relative;
+    z-index: 11;
+    margin-left: 7%;
+  }
+
+  .container-4 {
+    position: relative;
+    z-index: 8;
+    margin-left: 7%;
+  }
+
+  .container-5 {
+    position: relative;
+    z-index: 5;
+    margin-left: 7%;
+  }
+
+  .container-6 {
+    position: relative;
+    z-index: 2;
+    margin-left: 7%;
+  }
+
   .menu .text-2 {
-    margin-top: 12px;
-    margin-left: 2.8125%;
+    z-index: 15;
+    margin-top: 6px;
+    margin-left: 2.76415%;
   }
 
   .menu .text-3 {
     clear: both;
-    margin-left: 5.9375%;
+    z-index: 20;
+    margin-top: -22px;
+    margin-left: 9.46161%;
+  }
+
+  .menu .text-4 {
+    z-index: 16;
+    margin-top: -22px;
+    margin-left: 11.54374%;
+  }
+
+  .menu .text-5 {
+    z-index: 17;
+    margin-top: -22px;
+    margin-left: 24.24221%;
   }
 
   .menu .text-6 {
-    clear: both;
-    margin-top: 7px;
-    margin-left: 2.8125%;
+    z-index: 18;
+    margin-top: -22px;
+    margin-left: 42.02512%;
   }
 
-  .menu .text-4,
-  .menu .text-5,
-  .menu .text-7,
+  .menu .text-7 {
+    z-index: 19;
+    margin-top: -22px;
+    margin-left: 69.05312%;
+  }
+
   .menu .text-8 {
-    clear: both;
-    margin-top: 8px;
-    margin-left: 2.8125%;
+    z-index: 21;
+    margin-top: -22px;
+    margin-left: 88.20367%;
   }
 
   .text span {
-    font-size: 2.545em;
+    font-size: 1.75em;
   }
 }
 

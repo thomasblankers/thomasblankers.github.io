@@ -364,6 +364,7 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   background-color: transparent;
+  text-shadow: none;
   font-family: inherit;
   font-size: inherit;
   letter-spacing: inherit;
@@ -388,6 +389,7 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   background-color: transparent;
+  text-shadow: none;
   font-family: inherit;
   font-style: inherit;
   font-size: inherit;
@@ -415,6 +417,7 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   background-color: transparent;
+  text-shadow: none;
   text-decoration: none;
   letter-spacing: inherit;
   word-spacing: inherit;

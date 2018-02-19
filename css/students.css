@@ -80,7 +80,7 @@ body {
 .text-1 {
   position: relative;
   z-index: 12;
-  margin: 35px 0 0 0.96875%;
+  margin: 20px 0 0 0.88672%;
   font-family: Helvetica;
   color: rgb(0, 0, 0);
 }
@@ -214,6 +214,7 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 12;
+    margin-left: 0.89063%;
   }
 
   .menu .text-2 {
@@ -263,6 +264,7 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 12;
+    margin-left: 0.89154%;
   }
 
   .menu .text-2 {
@@ -333,7 +335,6 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 12;
-    margin-top: 20px;
     margin-left: 0.89375%;
   }
 
@@ -371,6 +372,7 @@ body {
     font-size: 1.75em;
   }
 }
+
 .slicknav_menu {
 display: none;
 }

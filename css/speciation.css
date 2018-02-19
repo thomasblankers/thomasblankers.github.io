@@ -92,7 +92,7 @@ body {
 .text-1 {
   position: relative;
   z-index: 20;
-  margin: 35px 0 0 0.96875%;
+  margin: 20px 0 0 0.88672%;
   font-family: Helvetica;
   font-size: 1em;
   color: rgb(0, 0, 0);
@@ -331,6 +331,7 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 20;
+    margin-left: 0.89063%;
   }
 
   .menu .text-2 {
@@ -421,6 +422,7 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 20;
+    margin-left: 0.89154%;
   }
 
   .menu .text-2 {
@@ -492,7 +494,6 @@ body {
 
   .image {
     position: relative;
-    clear: none;
     z-index: 4;
     height: auto;
   }
@@ -532,7 +533,6 @@ body {
   .container .text-1 {
     position: relative;
     z-index: 20;
-    margin-top: 20px;
     margin-left: 0.89375%;
   }
 
@@ -578,7 +578,6 @@ body {
 
   .text-13 {
     position: relative;
-    clear: none;
     z-index: 3;
     margin-top: -1008px;
   }
@@ -591,19 +590,18 @@ body {
 
   .text-15 {
     position: relative;
-    clear: none;
     z-index: 1;
   }
 
   .text-16 {
     position: relative;
-    clear: none;
     z-index: 0;
   }
 
   .text-9 {
     position: relative;
     z-index: 8;
+    width: 69.1999999999%;
   }
 
   .text-1 span {
