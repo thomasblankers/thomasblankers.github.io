@@ -1,0 +1,468 @@
+body {
+  min-width: none;
+  min-height: nonepx;
+  background-color: rgb(255, 255, 255);
+  font: 400 1em/1.38 Montserrat;
+  color: rgb(0, 0, 0);
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.contact {
+  position: relative;
+  float: right;
+  z-index: 1;
+  width: 20%;
+  min-height: 168px;
+  margin: 30px 10% 0 0;
+  font-size: 0.75em;
+  line-height: 1;
+  text-align: right;
+  color: rgb(0, 0, 0);
+}
+
+.contact p {
+  margin-bottom: 0.5em;
+}
+
+.content {
+  position: relative;
+  float: left;
+  z-index: 4;
+  width: 100%;
+  height: 588px;
+}
+
+.currentjob {
+  float: left;
+  clear: both;
+  margin: 5px 0 0 10%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.cv {
+  float: left;
+  margin: 3px 0 0 2.59651%;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cv:hover,
+.home:hover,
+.publications:hover,
+.research:hover {
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 13;
+  width: 100%;
+  height: 147px;
+  background-color: rgb(255, 255, 255);
+}
+
+.home {
+  float: left;
+  margin: 3px 0 0 5%;
+  border-radius: 5px;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.homeimage {
+  width: 80%;
+  height: 167px;
+  margin: 180px auto 0;
+  background: url('../images/landingimg(2).png') rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.homeimage:hover {
+  border: 1px solid rgb(0, 57, 204);
+  background-color: rgb(255, 255, 255);
+}
+
+.intro {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 2;
+  width: 59%;
+  min-height: 10px;
+  margin: 30px 0 0 10.04948%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.menu {
+  width: 85%;
+  height: 27px;
+  min-height: 10px;
+  margin: 100px auto 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.publications {
+  float: left;
+  margin: 3px 0 0 2.7451%;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.research {
+  float: left;
+  margin: 3px 0 0 3.35325%;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.slicknavhandle {
+  float: left;
+  clear: both;
+  width: 120px;
+  height: 2px;
+  margin: 4px 0 0 7.5%;
+  background-color: rgb(255, 255, 255);
+}
+
+.socialmedia {
+  float: left;
+  clear: both;
+  width: 59%;
+  min-height: 187px;
+  margin-left: 10.04948%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.socialmedia p {
+  margin-bottom: 1em;
+}
+
+.thomas {
+  float: left;
+  margin: 25px 0 0 10%;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.contact a {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: #000000;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.contact span {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.083em;
+  font-weight: 700;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.cv a,
+.home a,
+.publications a,
+.research a {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.intro a {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: rgb(2, 165, 204);
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.socialmedia a {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: normal;
+  font-size: inherit;
+  font-weight: 700;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: rgb(2, 165, 204);
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.socialmedia em {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: normal;
+  font-size: inherit;
+  font-weight: 700;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: rgb(0, 2, 2);
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+@media(max-width: 850px) {
+  .content {
+    position: relative;
+    z-index: 4;
+  }
+
+  .content .contact {
+    position: relative;
+    clear: both;
+    z-index: 1;
+    width: 85%;
+    margin-top: 15px;
+  }
+
+  .content .homeimage {
+    float: left;
+    width: 76.5%;
+    margin-right: 0;
+    margin-left: 10%;
+  }
+
+  .content .intro {
+    position: relative;
+    z-index: 2;
+    width: 76.5%;
+    margin-top: 29px;
+    margin-left: 11.75%;
+  }
+
+  .content .socialmedia {
+    margin-top: 15px;
+    margin-left: 10.0459599999%;
+  }
+
+  .header .menu {
+    margin-top: 120px;
+  }
+
+  .header .slicknavhandle {
+    margin-top: 7px;
+  }
+
+  .header .thomas {
+    margin-top: 20px;
+  }
+
+  .menu .cv {
+    margin-left: 9.10251%;
+  }
+
+  .menu .publications {
+    margin-left: 4.75779%;
+  }
+
+  .menu .research {
+    margin-left: 3.35424%;
+  }
+}
+
+@media(max-width: 500px) {
+  body {
+    font-size: 1em;
+  }
+
+  .content {
+    position: relative;
+    z-index: 4;
+  }
+
+  .content .contact {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+  }
+
+  .content .homeimage {
+    width: 85.159375%;
+  }
+
+  .content .intro {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .content .socialmedia {
+    margin-top: 10px;
+    margin-left: 10.04688%;
+  }
+
+  .header .menu {
+    float: left;
+    clear: both;
+    width: 20%;
+    height: 150px;
+    margin-top: 18px;
+    margin-right: 0;
+    margin-left: 50px;
+  }
+
+  .header .slicknavhandle {
+    margin-top: 4px;
+    margin-left: 10%;
+  }
+
+  .menu .cv,
+  .menu .publications {
+    clear: both;
+    margin-left: 0;
+  }
+
+  .menu .home {
+    margin-left: 0;
+  }
+
+  .menu .research {
+    clear: both;
+    margin-top: 1px;
+    margin-left: 0;
+  }
+}
+
+.slicknav_menu {
+display: none;
+}
+ @media screen and (max-width: 500px) {
+.js #menu {
+display: none;
+}
+.js .slicknav_menu {
+display: block;
+}

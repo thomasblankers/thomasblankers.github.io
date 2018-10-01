@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>home</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="SlickNav/dist/slicknav.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body class="body page-index clearfix">
+  <div class="content clearfix">
+    <div onClick="window.location='landingimage.html';" class="homeimage"></div>
+    <p class="intro">Hi, my name is Thomas Blankers and I currently work as a Marie Curie post-doctoral fellow in <a href="http://www.uva.nl/profiel/g/r/a.t.groot/a.t.groot.html" target="_blank">Astrid Groot's lab</a> at the University of Amsterdam. My work focusses on speciation genetics and covers a wide range of topics including the genetic architecture of behavioral isolation, population genetics, and functional genetics. Read more about my current and past research on Heliothine moths, Hawaiian and North American crickets, and global diversity of salamanders and lizards in the <a href="research.html">Research </a>section of my website.</p>
+    <div class="contact">
+      <p><span>Contact information</span></p>
+      <p>University of Amsterdam</p>
+      <p>Institute for Biodiversity and Ecosystem Dynamics</p>
+      <p>Science Park 904</p>
+      <p>1098 XH Amsterdam, The Netherlands</p>
+      <p><a>thomasblankers &lt;at&gt; gmail.com</a></p>
+</div>
+    <div class="socialmedia">
+      <p><em>Links</em></p>
+      <p>Scripts are available on&nbsp;<a href="https://github.com/thomasblankers" target="_blank">GitHub</a></p>
+      <p>Pre-prints are available on <a href="https://www.biorxiv.org/search/thomas%252Bblankers" target="_blank">BioRxiv</a></p>
+      <p>Additional information is available on <a href="https://www.researchgate.net/profile/Thomas_Blankers" target="_blank">ResearchGate</a>&nbsp;and <a href="https://scholar.google.nl/citations?user=kR84vhgAAAAJ&amp;hl=nl&amp;oi=ao" target="_blank">Google Scholar</a><br></p>
+</div>
+  </div>
+  <div class="header clearfix">
+    <p class="thomas">Thomas Blankers</p>
+    <p class="currentjob">Marie Curie post-doctoral research fellow at the University of Amsterdam </p>
+    <ul id="menu" class="menu clearfix">
+      <p onClick="window.location='index.html';" class="home"><a href="index.html">Home</a></p>
+      <p onClick="window.location='research.html';" class="research"><a href="research.html">Research</a></p>
+      <p onClick="window.location='publications.html';" class="publications"><a href="publications.html">Publications</a></p>
+      <p onClick="window.location='cv.html';" class="cv"><a href="cv.html">CV</a></p>
+    </ul>
+    <div id="bar" class="slicknavhandle"></div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="SlickNav/dist/jquery.slicknav.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#menu').slicknav({
+        label:'',
+        prependTo:'#bar',
+        closeOnClick:'true', // Close menu when a link is clicked.
+		easingOpen: 'swing',
+		easingClose: 'swing'
+});
+});
+</script>
+
+</body>
+</html>
