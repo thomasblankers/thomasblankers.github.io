@@ -91,7 +91,7 @@ body {
 .homeimage {
   width: 80%;
   height: 167px;
-  margin: 234px auto 0;
+  margin: 180px auto 0;
   background: url('../images/landingimg(2).png') rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-size: contain;
@@ -350,7 +350,6 @@ body {
   .content .homeimage {
     float: left;
     width: 76.5%;
-    margin-top: 233px;
     margin-right: 0;
     margin-left: 10%;
   }
@@ -411,7 +410,6 @@ body {
 
   .content .homeimage {
     width: 85.159375%;
-    margin-top: 250px;
   }
 
   .content .intro {

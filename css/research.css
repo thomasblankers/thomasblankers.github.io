@@ -34,7 +34,7 @@ body {
   left: 0;
   z-index: 9;
   width: 100%;
-  height: 144px;
+  height: 147px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -214,7 +214,15 @@ body {
 
 @media(max-width: 850px) {
   .header .menu {
-    margin-top: 125px;
+    margin-top: 120px;
+  }
+
+  .header .slicknavhandle {
+    margin-top: 7px;
+  }
+
+  .header .thomas {
+    margin-top: 20px;
   }
 
   .menu .cv {
@@ -252,6 +260,7 @@ body {
   }
 
   .header .slicknavhandle {
+    margin-top: 4px;
     margin-left: 10%;
   }
 
