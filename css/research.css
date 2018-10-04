@@ -297,3 +297,16 @@ display: none;
 .js .slicknav_menu {
 display: block;
 }
+
+@font-face {
+    font-family: 'sans_forgeticaregular';
+    src: url('sansforgetica-regular-webfont.eot');
+    src: url('sansforgetica-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sansforgetica-regular-webfont.woff2') format('woff2'),
+         url('sansforgetica-regular-webfont.woff') format('woff'),
+         url('sansforgetica-regular-webfont.ttf') format('truetype'),
+         url('sansforgetica-regular-webfont.svg#sans_forgeticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
