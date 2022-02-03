@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>research</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/template-page-grid.css">
+  <link rel="stylesheet" href="css/template-page.css">
+  <link rel="stylesheet" href="SlickNav/dist/slicknav.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body class="body page-template-page clearfix">
+  <div class="header clearfix">
+    <p class="thomas">Thomas Blankers</p>
+    <p class="currentjob">Assistant professor at the University of Amsterdam </p>
+    <ul id="menu" class="menu clearfix">
+      <p onClick="window.location='index.html';" class="home"><a href="index.html">Home</a></p>
+      <p onClick="window.location='research.html';" class="research"><a href="research.html">Research</a></p>
+      <p onClick="window.location='publications.html';" class="publications"><a href="publications.html">Publications</a></p>
+      <p onClick="window.location='cv.html';" class="cv"><a href="cv.html">CV</a></p>
+    </ul>
+  </div>
+  <div id="bar" class="slicknavhandle"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="SlickNav/dist/jquery.slicknav.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#menu').slicknav({
+        label:'',
+        prependTo:'#bar',
+        closeOnClick:'true', // Close menu when a link is clicked.
+		easingOpen: 'swing',
+		easingClose: 'swing'
+});
+});
+</script>
+
+</body>
+</html>
