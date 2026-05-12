@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Origins Center Conference 2026 – Programme</title>
+  <style>
+    :root {
+      /* Replace these with the real Origins Center brand colors */
+      --oc-primary: #005b53;      /* placeholder: dark green from logo file name */
+      --oc-primary-dark: #003f39; /* placeholder darker tone */
+      --oc-bg: #f9fafb;
+      --oc-text: #111827;
+      --oc-muted: #6b7280;
+      --oc-accent: #1f2937;       /* deep gray/blue accent */
+
+      /* Replace these with the exact font stacks from the website CSS */
+      --oc-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --oc-font-heading: var(--oc-font);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--oc-font);
+      background: var(--oc-bg);
+      color: var(--oc-text);
+      line-height: 1.5;
+    }
+
+    .page {
+      width: 100%;
+      max-width: …;
+      min-height: 240mm;
+      margin: 0 auto;
+      padding: 0.3rem 1.5rem 2.5rem;
+      background: white;
+    }
+
+
+    h1, h2, h3, h4 {
+      font-family: var(--oc-font-heading);
+      margin: 0 0 0.4em;
+      color: var(--oc-primary);
+    }
+
+    .cover-hero {
+      position: relative;
+      height: 120mm;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20mm;
+      background: var(--oc-primary-dark);
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      padding: 24mm;
+      background-image:
+        linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.1)),
+        url("https://www.originscenter.nl/app/uploads/2020/09/Schermafbeelding-2020-09-25-om-14.32.48.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cover-title {
+      max-width: 70%;
+    }
+
+    .cover-title h1 {
+      font-size: 26pt;
+      color: white;
+    }
+
+    .cover-title p {
+      margin: 0.2em 0;
+      font-size: 14pt;
+    }
+
+    .cover-meta {
+      margin-top: 0.6em;
+      font-size: 12pt;
+      color: #e5e7eb;
+    }
+
+    .cover-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11pt;
+      color: var(--oc-muted);
+    }
+
+    .logo {
+      height: 18mm;
+    }
+
+    .day-header {
+      font-size: 14pt;
+      margin-top: 0mm;
+      margin-bottom: 3mm;
+    }
+
+    .day-header .date {
+      font-size: 12pt;
+      color: var(--oc-muted);
+    }
+
+    .schedule {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(70px, 110px) 1fr; 
+      gap: 8px 18px;
+      font-size: 12pt;
+    }
+
+    .time {
+      text-align: right;
+      padding-top: 4px;
+      color: var(--oc-muted);
+      font-variant: small-caps;
+      letter-spacing: 0.06em;
+    }
+
+    .session-block {
+      padding: 2px 10px;
+      border-left: 2px solid var(--oc-primary);
+      border-radius: 4px;
+      background: #f3f4f6;
+      margin-bottom: 4px;
+    }
+
+    .session-title {
+      font-weight: 600;
+      color: var(--oc-accent);
+    }
+
+    .talk {
+      margin-top: 4px;
+    }
+
+    .talk-title {
+      font-weight: 600;
+    }
+
+    .speaker {
+      color: var(--oc-muted);
+      font-size: 12pt;
+    }
+
+    .break {
+      font-style: italic;
+      color: var(--oc-muted);
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+      .page {
+        box-shadow: none;
+        grid-template-columns: 1fr; 
+        margin: 0;
+        padding: 20mm 18mm;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Cover -->
+<!--   <section class="page">
+    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10mm;">
+      <img src="origins-logo.svg" alt="Origins Center" class="logo" />
+    </header>
+ -->
+    <div class="cover-hero">
+      <div class="cover-title">
+        <h1>Origins Center Conference 2026</h1>
+        <p>Exploring the origin and evolution of life on Earth and in the universe</p>
+        <div class="cover-meta">
+          <div>Monday 18 May – Wednesday 20 May</div>
+          <div>Abdij Rolduc, Kerkrade</div>
+        </div>
+      </div>
+    </div>
+
+<!--     <div class="cover-footer">
+      <div>Hosted by the Origins Center</div>
+      <div>originscenter.nl • [contact email]</div>
+    </div>
+ -->  </section>
+
+  <!-- Page 2: Monday -->
+  <section class="page">
+    <div class="day-header">
+      <h2>Day 1 – Monday</h2>
+      <div class="date">18 May</div>
+    </div>
+
+    <div class="schedule">
+
+      <!-- Reception -->
+      <div class="time">13:00</div>
+      <div class="session-block">
+        <div class="session-title">Reception with snacks</div>
+      </div>
+
+      <!-- Opening & Introduction -->
+      <div class="time">13:30</div>
+      <div class="session-block">
+        <div class="session-title">Opening &amp; Introduction</div>
+        <div class="talk">
+          <span class="talk-title">Welcome</span> – 
+          <span class="speaker">Sijbren Otto (University of Groningen) &amp; Thomas Blankers (University of Amsterdam)</span>
+        </div>
+        <div class="talk">
+          <span class="talk-title">Origins Center State of the Art</span> – 
+          <span class="speaker">Inge Loes ten Kate (Utrecht University)</span>
+        </div>
+      </div>
+
+      <!-- Afternoon Session 1 -->
+      <div class="time">14:00</div>
+      <div class="session-block">
+        <div class="session-title">Afternoon Session 1 </div>
+        <div class="talk">
+          <span class="speaker">14:00</span> – 
+          <span class="talk-title">Biosignatures and the search for extraterrestrial life</span> – 
+          <span class="speaker">Inge Loes ten Kate (Utrecht University)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">14:30</span> – 
+          <span class="talk-title">To boldly grow where no plant has grown before. How can we grow crops on Mars and how can we learn from it on Earth?</span> – 
+          <span class="speaker">Wieger Wamelink (Wageningen University and Research)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">15:00</span> – 
+          <span class="talk-title">Ionic liquids as overlooked participants in prebiotic chemistry</span> – 
+          <span class="speaker">Iaroslav Iakubivsky (MIT)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">15:15</span> – 
+          <span class="talk-title">Geochemical control of early Hadean climate and surface conditions</span> – 
+          <span class="speaker">Emeline Decocq (University of Groningen)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">15:30</span> – 
+          <span class="talk-title">The protometabolic nature of prebiotic chemistry</span> – 
+          <span class="speaker">Andres de la Escosura Navazo (Universidad Autonoma de Madrid)</span>
+        </div>
+      </div>
+
+      <!-- Coffee break -->
+      <div class="time">15:45</div>
+      <div class="session-block">
+        <div class="break">Coffee break</div>
+      </div>
+
+      <!-- Afternoon Session 2 -->
+      <div class="time">16:15</div>
+      <div class="session-block">
+        <div class="session-title">Afternoon Session 2</div>
+        <div class="talk">
+          <span class="speaker">16:15</span> – 
+          <span class="talk-title">Why is minimal life so complex? On the need to integrate metabolic, ecological and evolutionary dynamics within abiogenesis</span> – 
+          <span class="speaker">Kepa Ruiz-Mirazo (University of the Basque Country)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">16:45</span> – 
+          <span class="talk-title">Tarring the emergence of life</span> – 
+          <span class="speaker">Rowena Ball (Australian National University)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">17:00</span> – 
+          <span class="talk-title">Energy rate density as a complexity metric: from life to cosmos and culture</span> – 
+          <span class="speaker">Martin van Duin (Independent Researcher)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">17:15</span> – 
+          <span class="talk-title">Searching for principles of microbial physiology: from metabolic transitions to whole-cell control</span> – 
+          <span class="speaker">Bob Planqué (VU Amsterdam)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">17:45</span> – 
+          <span class="talk-title">Large aggregates in the Formose reaction: new perspectives on reactivity and compartmentalization</span> – 
+          <span class="speaker">Yannick Geiger (University of Strasbourg)</span>
+        </div>
+
+      </div>
+ 
+
+      <!-- Dinner -->
+      <div class="time">18:00</div>
+      <div class="session-block">
+        <div class="break">Dinner</div>
+      </div>
+
+      <!-- Evening session -->
+      <div class="time">20:00</div>
+      <div class="session-block">
+        <div class="session-title">Evening session</div>
+        <div class="talk">
+          <span class="speaker">20:00</span> – 
+          <span class="talk-title">Prebiotic organocatalysis – a mechanism to the emergence of life</span> – 
+          <span class="speaker">Oliver Trapp (Ludwig Maximilian University Munich)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">20:30</span> – 
+          <span class="talk-title">A geological solution to the phosphate problem by magmatic enrichment</span> – 
+          <span class="speaker">Daniel Weller (Ludwig Maximilian University Munich)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">20:45</span> – 
+          <span class="talk-title">Enhanced RNA formation under amine-rich local atmospheres from 2’,3’-cyclic nucleotides</span> – 
+          <span class="speaker">Almuth Schmid (Ludwig Maximilian University Munich)</span>
+        </div>
+      </div>
+
+      <!-- Free time -->
+      <div class="time">21:00</div>
+      <div class="session-block">
+        <div class="talk-title">Relax at the hotel bar "De verloren zoon" (former wine cellar)</div>
+      </div> 
+
+    </div>
+  </section>
+
+  <!-- Page 2: Tuesday -->
+  <section class="page">
+    <div class="day-header">
+      <h2>Day 2 – Tuesday</h2>
+      <div class="date">19 May</div>
+    </div>
+
+    <div class="schedule">
+
+      <!-- Breakfast -->
+      <div class="time">7:30</div>
+      <div class="session-block">
+        <div class="break">Breakfast</div>
+      </div>
+
+      <!-- Morning Session -->
+      <div class="time">09:00</div>
+      <div class="session-block">
+        <div class="session-title">Morning session </div>
+        <div class="talk">
+          <span class="speaker">09:00</span> – 
+          <span class="talk-title">A planetary science perspective for timing the onset of life’s origins on Earth</span> – 
+          <span class="speaker">Ramon Brasser (Konkoly Observatory, Budapest)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">09:30</span> – 
+          <span class="talk-title">Luctor et emergo: The geological processes needed to make land on a wet planet </span> – 
+          <span class="speaker">Douwe van Hinsbergen (Utrecht University)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">10:00</span> – 
+          <span class="talk-title">Exploring how biotic interactions affect cyclicity in carbonate rocks with CarboKitten.jl</span> – 
+          <span class="speaker">Charlotte Summers (Utrecht University)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">10:15</span> – 
+          <span class="talk-title">Chaos: the bringer of life</span> – 
+          <span class="speaker">Simon Portegies Zwart (Leiden Observatory)</span>
+        </div>
+      </div>
+
+      <!-- Coffee break -->
+      <div class="time">10:30</div>
+      <div class="session-block">
+        <div class="break">Coffee break</div>
+      </div>
+
+      <!-- Societal Engagement Session -->
+      <div class="time">11:00</div>
+      <div class="session-block">
+        <div class="session-title">Societal Engagement Session</div>
+        <div class="talk">
+          <span class="speaker">11:00</span> – 
+          <span class="talk-title">Moving Art</span> – 
+          <span class="speaker">Michel Reij</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">11:15</span> – 
+          <span class="talk-title">Communicating PRELIFE</span> – 
+          <span class="speaker">Marieke Baan (University of Amsterdam)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">11:30</span> – 
+          <span class="talk-title">Stakeholder engagement workshop </span> – 
+          <span class="speaker">Inge Loes ten Kate (Utrecht University) & Thomas Blankers (University of Amsterdam)</span>
+        </div>
+      </div>
+
+      <!-- Lunch -->
+      <div class="time">12:30</div>
+      <div class="session-block">
+        <div class="break">Lunch</div>
+      </div> 
+
+      <!-- Free time -->
+      <div class="time">13:30</div>
+      <div class="session-block">
+        <div class="talk-title">Free time and excursions</div>
+      </div> 
+
+      <!-- Poster Session -->
+      <div class="time">15:00</div>
+      <div class="session-block">
+        <div class="talk-title">Poster Session (with drinks)</div>
+        <div class="speaker">&#x2022; Thomas Blankers (University of Amsterdam) - Origin of Life's diversity: principles of microevolutionary dynamics from prebiotic replicators to urban ecosystems</div>
+        <div class="speaker"> &#x2022; Mina Bordbar  ( University of Groningen) - Catalytic activity across peptide based self-replicator systems</div>
+        <div class="speaker"> &#x2022; Levy Charleston ( University of Groningen) - Expanding replicator evolvability: the incorporation of nucleobases in self-replicators </div>
+        <div class="speaker"> &#x2022; Kalliopi Fourli ( University of Groningen) - Estimating the fidelity of synthetic self-replicating systems </div>
+        <div class="speaker"> &#x2022; Fabrizio Giordano ( Delft University of Technology) - Enceladus plume experiments to investigate thermal effects on eruption dynamics and ice grain production  </div>
+        <div class="speaker"> &#x2022; Shana Hamed ( University of Groningen)  - Photoresponsive self-replicating and compartment systems</div>
+        <div class="speaker"> &#x2022; Elle Hanson & Cedric Thieulot ( University of Amsterdam) - Forming polycyclic aromatic hydrocarbons in Titan’s cold atmosphere </div>
+        <div class="speaker"> &#x2022; Agnes Hendrickx ( Utrecht University) - MEEUUW: a new open source, simple and flexible geodynamical Python code for Early Earth mantle convection </div>
+        <div class="speaker"> &#x2022; Jara Hintz  ( Ludwig-Maximilians-Universität Munich) - RNA recyclization using diamodophosphate (DAP)  </div>
+        <div class="speaker"> &#x2022; Muhammad Waleed Iqbal ( University of Groningen) - The molecular architecture of the nucleolus </div>
+        <div class="speaker"> &#x2022; Soumil Kelkar ( University of Groningen) - A new framework to establish Habitable Zone boundaries  </div>
+        <div class="speaker"> &#x2022; Armin Kiani ( University of Groningen) - Replicator-mediated emergence, growth, and fission of synthetic protocells</div>
+        <div class="speaker"> &#x2022; Sumei Kinzelbach  ( University of Groningen) - Lamarckism in a synthetic self-replicator </div>
+        <div class="speaker"> &#x2022; Wouter Mulder ( University of Amsterdam) - Mud, monomers, and the emergence of life: towards prebiotic oligomer formation on rocky planets </div>
+        <div class="speaker"> &#x2022; Haruka Nakagawa ( University of Groningen) - Experimental exploration of protocell formation on early Earth  </div>
+        <div class="speaker"> &#x2022; Chantal Nardiello ( Technische Universität Dortmund) - Exploring the effect of peptide cofactors on templated RNA replication by the group I intron sunY </div>
+        <div class="speaker"> &#x2022; Ryosuke Nishide ( University of Copenhagen) - Self-organized membrane potential via collective pump alignment: toward chemiosmotic coupling </div>
+        <div class="speaker"> &#x2022; Bram Peters ( University of Groningen)  - Organocatalytic Pudovik reaction using phosphonic acid-based catalysts  </div>
+        <div class="speaker"> &#x2022; Ece Ipek Saruhan  (Ludwig-Maximilians-Universität Munich) - Atmospheric control of ph cycling in prebiotic systems  </div>
+        <div class="speaker"> &#x2022; Florence Stikkelbroeck  (University of Amsterdam) - Attack on Titan: identifying PAH’s in titan’s upper atmosphere  </div>
+        <div class="speaker"> &#x2022; Megha Suresh  ( University of Groningen) - Defrosting the genetic code: how the translation system constrains code evolution </div>
+        <div class="speaker"> &#x2022; Wim van Westrenen (VU Amsterdam) - Effect of oxygen on planetary evolution </div>
+        <div class="speaker"> &#x2022; Eveline Verhulst  (Wageningen University) - Epigenetics of sex determination in the wasp, Nasonia vitripennis </div>
+        <div class="speaker"> &#x2022; Xinyue Zhou ( University of Groningen) - Towards rational evolution on communities of self replicating molecules  </div>
+        <div class="speaker"> &#x2022; Anthonie Muller (Independent Researcher) - Origin and evolution of life by thermosynthesis </div>
+        <div class="speaker"> &#x2022; Simone Scardigno  (University of Groningen) - Symmetry-breaking self-replicators: from supramolecular to molecular chirality  </div>
+      </div> 
+
+      <!-- Afternoon Session -->
+      <div class="time">16:45</div>
+      <div class="session-block">
+        <div class="session-title">Afternoon Session</div>
+        <div class="talk">
+          <span class="speaker">16:45</span> – 
+          <span class="talk-title">Surface astrochemistry – how complex can it be</span> – 
+          <span class="speaker">Herma Cuppen (Radboud University Nijmegen)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">17:15</span> – 
+          <span class="talk-title">Formation of clay nano-compartments in origins of Life</span> – 
+          <span class="speaker">Orr Rose Bezaly (University of Amsterdam)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">17:30</span> – 
+          <span class="talk-title">Enrichment and selection by physical non-equilibria to control prebiotic chemistry</span> – 
+          <span class="speaker">Christof Mast (Ludwig Maximilian University Munich)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">17:45</span> – 
+          <span class="talk-title">Living Planet – how life and planet are interdependent and co-evolving: an interdisciplinary approach </span> – 
+          <span class="speaker"> Martijn Egas (University of Groningen)</span>
+        </div>
+      </div>
+
+      <!-- Dinner -->
+      <div class="time">18:15</div>
+      <div class="session-block">
+        <div class="break">Dinner</div>
+      </div>
+
+      <!-- Evening session -->
+      <div class="time">20:00</div>
+      <div class="session-block">
+        <div class="session-title">Evening session</div>
+        <div class="talk">
+          <span class="speaker">20:00</span> – 
+          <span class="talk-title">Icy moons and their subsurface oceans: from Cassini and JWST observations  to laboratory experiments</span> – 
+          <span class="speaker">Stephanie Cazaux (Delft University of Technology)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">20:30</span> – 
+          <span class="talk-title">Complexity from the stars - Formation of complex organics from interstellar carbon chains</span> – 
+          <span class="speaker">Marten Raaphorst (Leiden Institute of Chemistry)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">20:45</span> – 
+          <span class="talk-title">Building a synthetic protocell with resilient chemical compatibility</span> – 
+          <span class="speaker">Pornpawit Siricharoensang (University of Groningen)</span>
+        </div>
+      </div>
+
+      <!-- Free time -->
+      <div class="time">21:00</div>
+      <div class="session-block">
+        <div class="talk-title">Relax at the hotel bar "De verloren zoon" (former wine cellar)</div>
+      </div> 
+
+    </div>
+  </section>
+
+
+
+  <!-- Page 2: Wednesday -->
+  <section class="page">
+    <div class="day-header">
+      <h2>Day 3 – Wednesday</h2>
+      <div class="date">20 May</div>
+    </div>
+
+    <div class="schedule">
+
+      <!-- Breakfast -->
+      <div class="time">7:30</div>
+      <div class="session-block">
+        <div class="break">Breakfast</div>
+      </div>
+
+      <!-- Session 1 -->
+      <div class="time">09:00</div>
+      <div class="session-block">
+        <div class="session-title">Morning Session 1</div>
+        <div class="talk">
+          <span class="speaker">09:00</span> – 
+          <span class="talk-title">Bare-rock worlds or planets with peculiar atmospheres? Predicted atmospheric evolution of rocky planets around M dwarfs</span> – 
+          <span class="speaker">Lena Noack (Freie Universität Berlin)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">09:30</span> – 
+          <span class="talk-title">Chiral self-selection in the RNA world</span> – 
+          <span class="speaker">Sreekar Wunnava (Ludwig Maximilian University Munich)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">09:45</span> – 
+          <span class="talk-title">Origins of cellular compartmentalization: from lipids to protocells </span> – 
+          <span class="speaker">Nathalie Katsonis (University of Groningen)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">10:15</span> – 
+          <span class="talk-title">Integrating synthetic self-replicators with self-assembling coacervate compartments </span>  – 
+          <span class="speaker">Lukas Herold (University of Groningen)</span>
+        </div>
+      </div>
+
+      <!-- Coffee break -->
+      <div class="time">10:30</div>
+      <div class="session-block">
+        <div class="break">Coffee break</div>
+      </div>
+
+      <!-- Session 2 -->
+      <div class="time">11:00</div>
+      <div class="session-block">
+        <div class="session-title">Morning Session 2</div>
+        <div class="talk">
+          <span class="speaker">11:00</span> – 
+          <span class="talk-title">Fidelity of RNA copying from random pools via 2’, 3’- cyclic phosphate mediated ligation</span> – 
+          <span class="speaker">Zsofia Meggyesi (Ludwig Maximilian University Munich)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">11:15</span> – 
+          <span class="talk-title">Evolving the molecules of life: RNA and protein</span> – 
+          <span class="speaker">Sam von der Dunk (University of Oxford)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">11:30</span> – 
+          <span class="talk-title">From rule-taking to rule-making chemistry </span> – 
+          <span class="speaker">Celia Blanco (Centro de Astrobiologa, CSIC-INTA Madrid)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">11:45</span> – 
+          <span class="talk-title">Astronomical climate forcing in deep time</span> – 
+          <span class="speaker">Margriet Lantink (Utrecht University)</span>
+        </div>
+        <div class="talk">
+          <span class="speaker">12:00</span> – 
+          <span class="talk-title">Egalitarian transitions and the evolution of heredity </span> – 
+          <span class="speaker">Paul Rainey (Max Planck Institute for Evolutionary Biology, Plön) </span>
+        </div>
+        <div class="talk">
+          <span class="speaker">12:30</span> – 
+          <span class="talk-title">Closing Remarks</span> – 
+          <span class="speaker">Sijbren Otto (University of Groningen) &amp; Thomas Blankers (University of Amsterdam)</span>
+        </div>
+      </div>
+
+      <!-- Lunch -->
+      <div class="time">12:35</div>
+      <div class="session-block">
+        <div class="break">Lunch</div>
+      </div> 
+</body>
+</html>
