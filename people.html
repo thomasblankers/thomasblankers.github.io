@@ -1,125 +1,97 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>people</title>
-  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/people-grid.css">
-  <link rel="stylesheet" href="css/people.css">
-  <link rel="stylesheet" href="SlickNav/dist/slicknav.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+  <title>People | Thomas Blankers</title>
+  <meta name="description" content="Current and past PhD students, postdocs and students in Thomas Blankers' group at the University of Amsterdam.">
+  <link rel="canonical" href="https://www.thomasblankers.com/people.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="People | Thomas Blankers">
+  <meta property="og:description" content="Current and past PhD students, postdocs and students in Thomas Blankers' group at the University of Amsterdam.">
+  <meta property="og:url" content="https://www.thomasblankers.com/people.html">
+  <meta property="og:image" content="https://www.thomasblankers.com/images/landing.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="body page-people clearfix">
-  <div class="header clearfix">
-    <p class="thomas">Thomas Blankers</p>
-    <p class="currentjob">Assistant professor at the University of Amsterdam</p>
-    <ul id="menu" class="menu clearfix">
-      <p onClick="window.location='index.html';" class="home"><a href="index.html">Home</a></p>
-      <p onClick="window.location='research.html';" class="research"><a href="research.html">Research</a></p>
-      <p onClick="window.location='publications.html';" class="publications"><a href="publications.html">Publications</a></p>
-      <p onClick="window.location='cv.html';" class="cv"><a href="cv.html">CV</a></p>
-	  <p onClick="window.location='people.html';" class="people"><a href="people.html">People</a></p>
-    </ul>
-    <div id="bar" class="slicknavhandle"></div>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="index.html">Thomas Blankers</a>
+    <div class="header-end">
+      <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="people.html" aria-current="page">People</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="cv.html">CV</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
   </div>
-  <div class="peeps">
-  <p><b>Isabel Rathmann (Postdoc)</b></p>
-	<br>
-	<p>A predictive framework for genomic evolution in <i>C. elegans</i> microbe interactions</p>
-	<br>
-  <p><b>Jesper Zonneveld (BSc student)</b></p>
-	<br>
-	<p>Metabarcoding workflow development</p>
-	<br>
-	<p><b>Moya Lieffering (MSc student)</b></p>
-	<br>
-	<p>Phylosymbiosis at population genetic structure in <i>Caenorhabditis elegans</i></p>
-	<br>
-	<p><b>Maria Charalambous (MSc student)</b></p>
-	<br>
-	<p><i>Caenorhabditis elegans</i> attraction towards environmental microbes</p>
-	<br>
-	<p><b>Bas Kuipers (BSc student)</b></p>
-	<br>
-	<p><i>Caenorhabditis elegans</i> motility and exploration in relation to environmental microbes and salinity</p>
-	<br>
-	<p><b>Stan van Dijk (MSc student)</b></p>
-	<br>
-	<p>Nematode-microbe covariance in the soil across an urbanization gradient</p>
-	<br>
-	<p><b><u>Past students</u></b></p>
-	<br>
-	 <p><b>Alex McKenna (MSc student)</b></p>
-	<br>
-	<p>Phylosymbiosis in <i>Caenorhabditis</i></p>
-	<br>
-  <p><b>Maarten Ooijevaar (BSc student)</b></p>
-	<br>
-	<p>The genetics of <i>C. elegans</i> microbe interactions</p>
-	<br>
-	 <p><b>Sophia Mulder (BSc student)</b></p>
-	<br>
-	<p><i>C. elegans</i> preference and the effect on microbiome assembly</p>
-	<br>
-	<p><b>Emma Diepenveen (MSc student)</b></p>
-	<br>
-	<p>The predictability of genetic evolution during <i>C. elegans</i> adaptation to a new microbial prey</p>
-	<br>
-	<p><b>Ellie Wilson (MSc student)</b></p>
-	<br>
-	<p>The genetic basis of  <i>C. elegans</i> - microbe interactions</p>
-	<br>
-	<p><b>Ihsen Lecat, Lille University (MSc student)</b></p>
-	<br>
-	<p>Reproductive isolation along a continuum of genetic differnetiation among <i>C. elegans</i> populations</p>
-	<br>
-	<p><b>Erdem Eren (Erasmus trainee)</b></p>
-	<br>
-	<p>The effect of microbial community composition on salt tolerance evolution in <i>C. elegans</i>.</p>
-	<br>
-	<p><b>Regina Maga&ntilde;a Vazquez (MSc student)</b></p>
-	<br>
-	<p><i>C. elegans</i> - microbiome co-evolution in response to exposure to nematocidal <i>Bacillus thuringiensis</i> and high environmental salinity.</p>
-	<br>
-	<p><b>El&eacute;a Cavignaux (MSc student)</b></p>
-	<br>
-	<p>The triadic interaction between environmental pH, compsotion of the microbiome and <i>C. elegans</i> behavior.</p>
-	<br>
-	<p><b>Jenneke Wijling(BSc student)</b></p>
-	<br>
-	<p>The effect of pre-adapted bacteria to <i>C. elegans</i> survival under extra-terrestrial conditions.</p>
-	<br>
-	<p><b>Manu van Wing (BSc student)</b></p>
-	<br>
-	<p>Covariation between abiotic factors, bacterial diversity, and <i>Caenorhabditis</i> species presence.</p>
-	<br>
-	<p><b>Canberk K&ouml;ro&#487;lu</b> (Erasmus trainee)</p>
-	<p>The astrobiology of host-microbe interactions – studying the effect of extra-terrestrial conditions on the behavior and fitness of <i>C. elegans</i> with and without microbial symbionts.</p>
-	<br>
-	<p><b>Lotta Vaskimo</b> (MSc student)</p>
-	<p>Genetic architecture of sex pheromone variation in <i>Heliothis subflexa</i>.</p>
-	<br>
-	<p><b>Arie Ebbenhorst</b> (Aeres applied university intern)</p>
-	<p>Genotype-dependent variation in <i>C. elegans</i> gut microbiome assembly.</p>
-	<br>
-	<p><b>Jerry Schouten</b> (BSc student)</p>
-	<p>Parasite-dependent mate choice in male and female <i>Heliothis subflexa</i>.</p>
-	<br>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="SlickNav/dist/jquery.slicknav.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $('#menu').slicknav({
-        label:'',
-        prependTo:'#bar',
-        closeOnClick:'true', // Close menu when a link is clicked.
-		easingOpen: 'swing',
-		easingClose: 'swing'
-});
-});
-</script>
+</header>
 
+<main class="wrap">
+<h1>People</h1>
+<p class="lede">Current and past members of the group at the Institute for Biodiversity and Ecosystem Dynamics. Interested in a project? See my <a href="https://www.uva.nl/profiel/b/l/t.blankers/t.blankers.html">UvA profile</a> for contact details.</p>
+<span class="label">Current</span>
+  <div class="row"><div class="when">Postdoc</div><div><span class="person"><b>Isabel Rathmann</b><br><span class="muted">A predictive framework for genomic evolution in <i>C. elegans</i>–microbe interactions</span></span></div></div>
+  <div class="row"><div class="when">Technician</div><div><span class="person"><b>Jeroen Swinkels</b><br><span class="muted">Rearing and behavioral lab support</span></span></div></div>
+  <div class="row"><div class="when">PhD student</div><div><span class="person"><b>Pietro Gadaleta</b> <span class="role">· since 2025</span></span></div></div>
+  <div class="row"><div class="when">PhD student</div><div><span class="person"><b>Jiajia Zhao</b> <span class="role">· since 2024</span></span></div></div>
+  <div class="row"><div class="when">Applied university intern</div><div><span class="person"><b>Ardehl Karijowidjojo</b><br><span class="muted">Rearing and molecular lab support</span></span></div></div>
+  <div class="row"><div class="when">MSc student</div><div><span class="person"><b>Ashirah Shapiro</b> <span class="role">· Leiden University</span><br><span class="muted">Phylosymbiosis at population genetic structure in <i>Caenorhabditis elegans</i></span></span></div></div>
+  <div class="row"><div class="when">MSc student</div><div><span class="person"><b>Bruno Loreto De Aragão Pedroso</b> <span class="role">· Leiden University</span><br><span class="muted">Phylosymbiosis at population genetic structure in <i>Caenorhabditis elegans</i></span></span></div></div>
+  
+<span class="label">PhD alumni</span>
+  <div class="row"><div class="when">2018–2023</div><div><span class="person"><b>Elise Fruitet</b> <span class="role">· PhD, University of Amsterdam</span><br><span class="muted">Defended 27 September 2023</span></span></div></div>
+  <div class="row"><div class="when">2016–2022</div><div><span class="person"><b>W. Hayden Waller</b> <span class="role">· PhD, Cornell University</span><br><span class="muted">Defended 16 September 2022</span></span></div></div>
+
+<span class="label">Past students and trainees</span>
+  <div class="row"><div class="when">2025/26</div><div><span class="person"><b>Moya Lieffering</b> <span class="role">· MSc student, Leiden University</span><br><span class="muted">Phylosymbiosis in <i>Caenorhabditis elegans</i> populations</span></span></div></div>
+  <div class="row"><div class="when">2025/26</div><div><span class="person"><b>Stan van Dijk</b> <span class="role">· MSc student, University of Amsterdam</span><br><span class="muted">Nematode–microbe covariance in the soil across an urbanization gradient</span></span></div></div>
+  <div class="row"><div class="when">2025/26</div><div><span class="person"><b>Maria Charalambous</b> <span class="role">· MSc student, University of Amsterdam</span><br><span class="muted"><i>Caenorhabditis elegans</i> attraction towards environmental microbes</span></span></div></div>
+  <div class="row"><div class="when">2025/26</div><div><span class="person"><b>Jesper Zonneveld</b> <span class="role">· Applied univerity intern, HU Leiden</span><br><span class="muted">Metabarcoding workflow development</span></span></div></div>
+  <div class="row"><div class="when">2025/26</div><div><span class="person"><b>Bas Kuipers</b> <span class="role">· BSc student, University of Amsterdam</span><br><span class="muted"><i>Caenorhabditis elegans</i> motility and exploration in relation to environmental microbes and salinity</span></span></div></div>
+  <div class="row"><div class="when">2024/25</div><div><span class="person"><b>Alex McKenna</b> <span class="role">· MSc student, Université de Lille</span><br><span class="muted">Phylosymbiosis in <i>Caenorhabditis</i></span></span></div></div>
+  <div class="row"><div class="when">2024/25</div><div><span class="person"><b>Maarten Ooijevaar</b> <span class="role">· BSc student</span><br><span class="muted">The genetics of <i>C. elegans</i>–microbe interactions</span></span></div></div>
+  <div class="row"><div class="when">2024/25</div><div><span class="person"><b>Sophia Mulder</b> <span class="role">· BSc student</span><br><span class="muted"><i>C. elegans</i> preference and the effect on microbiome assembly</span></span></div></div>
+  <div class="row"><div class="when">2023/24</div><div><span class="person"><b>Emma Diepeveen</b> <span class="role">· MSc student</span><br><span class="muted">The predictability of genetic evolution during <i>C. elegans</i> adaptation to a new microbial prey</span></span></div></div>
+  <div class="row"><div class="when">2023/24</div><div><span class="person"><b>Ellie Willson</b> <span class="role">· MSc student</span><br><span class="muted">The genetic basis of <i>C. elegans</i>–microbe interactions</span></span></div></div>
+  <div class="row"><div class="when">2023/24</div><div><span class="person"><b>Ihsen Lecat</b> <span class="role">· MSc student, Université de Lille</span><br><span class="muted">Reproductive isolation along a continuum of genetic differentiation among <i>C. elegans</i> populations</span></span></div></div>
+  <div class="row"><div class="when">2022/23</div><div><span class="person"><b>Erdem Eren</b> <span class="role">· Erasmus trainee</span><br><span class="muted">The effect of microbial community composition on salt tolerance evolution in <i>C. elegans</i></span></span></div></div>
+  <div class="row"><div class="when">2022/23</div><div><span class="person"><b>Regina Maga&ntilde;a Vazquez</b> <span class="role">· MSc student</span><br><span class="muted"><i>C. elegans</i>–microbiome co-evolution in response to exposure to nematocidal <i>Bacillus thuringiensis</i> and high environmental salinity</span></span></div></div>
+  <div class="row"><div class="when">2022/23</div><div><span class="person"><b>Eléa Cavigneaux</b> <span class="role">· MSc student</span><br><span class="muted">The triadic interaction between environmental pH, composition of the microbiome and <i>C. elegans</i> behavior</span></span></div></div>
+  <div class="row"><div class="when">2021/22</div><div><span class="person"><b>Canberk K&ouml;ro&#287;lu</b> <span class="role">· Erasmus trainee</span><br><span class="muted">The astrobiology of host–microbe interactions: the effect of extra-terrestrial conditions on the behavior and fitness of <i>C. elegans</i> with and without microbial symbionts</span></span></div></div>
+  <div class="row"><div class="when">2021/22</div><div><span class="person"><b>Lotta Vaskimo</b> <span class="role">· MSc student, Leiden University</span><br><span class="muted">Genetic architecture of sex pheromone variation in <i>Heliothis subflexa</i></span></span></div></div>
+  <div class="row"><div class="when">2021/22</div><div><span class="person"><b>Arie Ebbenhorst</b> <span class="role">· Aeres University of Applied Sciences intern</span><br><span class="muted">Genotype-dependent variation in <i>C. elegans</i> gut microbiome assembly</span></span></div></div>
+  <div class="row"><div class="when">2021/22</div><div><span class="person"><b>Jerry Schouten</b> <span class="role">· BSc student</span><br><span class="muted">Parasite-dependent mate choice in male and female <i>Heliothis subflexa</i></span></span></div></div>
+  <div class="row"><div class="when">Earlier</div><div><span class="person"><b>Jenneke Wijling</b> <span class="role">· BSc student</span><br><span class="muted">The effect of pre-adapted bacteria on <i>C. elegans</i> survival under extra-terrestrial conditions</span></span></div></div>
+  <div class="row"><div class="when">Earlier</div><div><span class="person"><b>Manu van Wing</b> <span class="role">· BSc student</span><br><span class="muted">Covariation between abiotic factors, bacterial diversity, and <i>Caenorhabditis</i> species presence</span></span></div></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <address>
+      Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam<br>
+      Science Park 904, 1098 XH Amsterdam, The Netherlands
+    </address>
+    <div class="links">
+      <a href="https://orcid.org/0000-0002-1893-8537">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=kR84vhgAAAAJ">Google Scholar</a>
+      <a href="https://github.com/thomasblankers">GitHub</a>
+      <a href="https://www.researchgate.net/profile/Thomas_Blankers">ResearchGate</a>
+      <a href="https://www.uva.nl/profiel/b/l/t.blankers/t.blankers.html">UvA profile</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
 </body>
 </html>

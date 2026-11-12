@@ -1,46 +1,66 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>research</title>
-  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,400" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/landingimage-grid.css">
-  <link rel="stylesheet" href="css/landingimage.css">
-  <link rel="stylesheet" href="SlickNav/dist/slicknav.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+  <title>Image credits | Thomas Blankers</title>
+  <meta name="description" content="Photo and image credits for the banner on thomasblankers.com.">
+  <link rel="canonical" href="https://www.thomasblankers.com/landingimage.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Image credits | Thomas Blankers">
+  <meta property="og:description" content="Photo and image credits for the banner on thomasblankers.com.">
+  <meta property="og:url" content="https://www.thomasblankers.com/landingimage.html">
+  <meta property="og:image" content="https://www.thomasblankers.com/images/landing.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="body page-landingimage clearfix">
-  <div class="header clearfix">
-    <p class="thomas">Thomas Blankers</p>
-    <p class="currentjob">Post-doctoral research fellow at the University of Amsterdam </p>
-    <ul id="menu" class="menu clearfix">
-      <p onClick="window.location='index.html';" class="home"><a href="index.html">Home</a></p>
-      <p onClick="window.location='research.html';" class="research"><a href="research.html">Research</a></p>
-      <p onClick="window.location='publications.html';" class="publications"><a href="publications.html">Publications</a></p>
-      <p onClick="window.location='cv.html';" class="cv"><a href="cv.html">CV</a></p>
-    </ul>
-    <div id="bar" class="slicknavhandle"></div>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="index.html">Thomas Blankers</a>
+    <div class="header-end">
+      <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="people.html">People</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="cv.html">CV</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
   </div>
-  <div onClick="window.location='landingimage.html';" class="homeimage"></div>
-  <div class="imagecredits">
-    <p><strong>Photo/Image credits</strong></p>
-    <p>From left to right: Gryllus texensis male (top) and female (bottom) [ Thomas Blankers]; Word cloud for my PhD thesis [Thomas Blankers]; Laupala spp male and female [courtesy of Kerry L. Shaw]; Field trip on Hawaii [Thomas Blankers]; Kohala mountains on Hawaii [Thomas Blankers]; publication art for Genetics 209: 1329–1344 [courtesy of W. Hayden Waller], Heliothis sublexa [Thomas Blankers], Heliothis virescens [courtesy of Astrid T. Groot], C. elegans [ Zeynep F. Altun, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=2680458] <br></p>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="SlickNav/dist/jquery.slicknav.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $('#menu').slicknav({
-        label:'',
-        prependTo:'#bar',
-        closeOnClick:'true', // Close menu when a link is clicked.
-		easingOpen: 'swing',
-		easingClose: 'swing'
-});
-});
-</script>
+</header>
 
+<main class="wrap">
+<h1>Image credits</h1>
+<img class="banner" src="images/landing.jpg" width="2700" height="529" alt="Banner collage of study organisms and fieldwork">
+<div class="prose" style="margin-top:24px">
+  <p>From left to right: <i>Gryllus texensis</i> male (top) and female (bottom) [Thomas Blankers]; word cloud for my PhD thesis [Thomas Blankers]; <i>Laupala</i> spp. male and female [courtesy of Kerry L. Shaw]; fieldwork on Hawaii [Thomas Blankers]; Kohala mountains on Hawaii [Thomas Blankers]; publication art for <i>Genetics</i> 209: 1329–1344 [courtesy of W. Hayden Waller]; <i>Heliothis subflexa</i> [Thomas Blankers]; <i>Heliothis virescens</i> [courtesy of Astrid T. Groot]; <i>C. elegans</i> [Zeynep F. Altun, CC BY-SA 2.5, <a href="https://commons.wikimedia.org/w/index.php?curid=2680458">Wikimedia Commons</a>].</p>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <address>
+      Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam<br>
+      Science Park 904, 1098 XH Amsterdam, The Netherlands
+    </address>
+    <div class="links">
+      <a href="https://orcid.org/0000-0002-1893-8537">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=kR84vhgAAAAJ">Google Scholar</a>
+      <a href="https://github.com/thomasblankers">GitHub</a>
+      <a href="https://www.researchgate.net/profile/Thomas_Blankers">ResearchGate</a>
+      <a href="https://www.uva.nl/profiel/b/l/t.blankers/t.blankers.html">UvA profile</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
 </body>
 </html>

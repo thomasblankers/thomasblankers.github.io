@@ -1,43 +1,311 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>cv</title>
-  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/cv-grid.css">
-  <link rel="stylesheet" href="css/cv.css">
-  <link rel="stylesheet" href="SlickNav/dist/slicknav.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-</head>
-<body class="body page-cv clearfix">
-  <div class="container clearfix">
-    <p class="thomas">Thomas Blankers</p>
-    <p class="currentjob">Assistant professor at the University of Amsterdam </p>
-    <ul id="menu" class="menu clearfix">
-      <p onClick="window.location='index.html';" class="home"><a href="index.html">Home</a></p>
-      <p onClick="window.location='research.html';" class="research"><a href="research.html">Research</a></p>
-      <p onClick="window.location='publications.html';" class="publications"><a href="publications.html">Publications</a></p>
-      <p onClick="window.location='cv.html';" class="cv"><a href="cv.html">CV</a></p>
-      <p onClick="window.location='people.html';" class="people"><a href="people.html">People</a></p>
-    </ul>
-    <div id="bar" class="slicknavhandle"></div>
-    <div onClick="window.location='https://github.com/thomasblankers/thomasblankers.github.io/raw/master/CV_07012026.pdf';" class="pdf"></div>
-  </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="SlickNav/dist/jquery.slicknav.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $('#menu').slicknav({
-        label:'',
-        prependTo:'#bar',
-        closeOnClick:'true', // Close menu when a link is clicked.
-		easingOpen: 'swing',
-		easingClose: 'swing'
-});
-});
-</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curriculum Vitae | Thomas Blankers</title>
+<meta name="description" content="Curriculum vitae of Thomas Blankers, assistant professor of Evolutionary Ecology at the University of Amsterdam.">
+<link rel="canonical" href="https://www.thomasblankers.com/cv.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Curriculum Vitae | Thomas Blankers">
+<meta property="og:image" content="https://www.thomasblankers.com/images/landing.jpg">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+/* Layout: one column; each entry is a two-column row (dates | content). Light, paper-like by design; prints to A4. */
+:root {
+  --paper: #ffffff;
+  --ink: #18211c;
+  --muted: #59645d;
+  --rule: #d5dbd5;
+  --accent: #2c6a43;
+  --page-bg: #eef1ed;
+  --f-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --f-body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { background: var(--page-bg); }
+body {
+  margin: 0; background: var(--page-bg); color: var(--ink);
+  font: 10pt/1.45 var(--f-body);
+  padding: 32px max(16px, env(safe-area-inset-right, 0px)) 48px max(16px, env(safe-area-inset-left, 0px));
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.sheet { background: var(--paper); max-width: 210mm; margin: 0 auto; padding: 18mm 18mm 16mm; box-shadow: 0 1px 3px rgba(24,33,28,.08), 0 8px 30px rgba(24,33,28,.06); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+i, em { font-style: italic; }
 
+/* header */
+header.top { display: grid; grid-template-columns: 1fr auto; gap: 6px 24px; align-items: end; padding-bottom: 14px; border-bottom: 2px solid var(--accent); }
+header.top h1 { font: 600 27pt/1 var(--f-display); margin: 0; letter-spacing: -0.01em; }
+header.top .role { font: italic 12pt/1.3 var(--f-display); color: var(--muted); margin-top: 6px; }
+header.top .contact { text-align: right; font-size: 8.6pt; line-height: 1.6; color: var(--muted); }
+header.top .contact a { color: var(--ink); }
+.webbar { max-width: 210mm; margin: 0 auto 12px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 13px; }
+.webbar a { color: var(--accent); font-weight: 600; }
+.webnav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.webnav a { color: var(--muted); font-weight: 400; }
+.webnav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+
+/* sections */
+section { margin-top: 16px; }
+h2 { font: 600 8pt/1 var(--f-body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; padding-bottom: 5px; border-bottom: 1px solid var(--rule); break-after: avoid; }
+h3 { font: 600 9.4pt/1.3 var(--f-body); margin: 10px 0 4px; color: var(--ink); break-after: avoid; }
+.row { display: grid; grid-template-columns: 27mm 1fr; gap: 0 5mm; padding: 2.4px 0; break-inside: avoid; }
+.row > * { min-width: 0; }
+.when { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 8.8pt; padding-top: 0.6pt; white-space: nowrap; }
+.what b { font-weight: 600; }
+.sub { color: var(--muted); }
+.note { color: var(--muted); font-size: 8.6pt; margin: 0 0 6px; }
+.amt { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+.tag { font-size: 7.2pt; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); border: 1px solid currentColor; border-radius: 2px; padding: 0 3px; margin-right: 4px; vertical-align: 1px; }
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 8mm; }
+.cols2 > div { min-width: 0; }
+p { margin: 0 0 6px; }
+
+/* publications */
+ol.pubs { list-style: none; margin: 0; padding: 0; counter-reset: pub 28; }
+ol.pubs li { counter-increment: pub -1; display: grid; grid-template-columns: 8mm 1fr; padding: 3px 0; break-inside: avoid; }
+ol.pubs li::before { content: counter(pub) "."; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 8.8pt; padding-top: 0.6pt; }
+ol.pubs .ttl { font-family: var(--f-display); font-size: 10.6pt; line-height: 1.3; }
+ol.pubs .me { font-weight: 600; }
+ol.pubs .src { color: var(--muted); }
+
+ul.talks { list-style: none; margin: 0; padding: 0; }
+ul.talks li { padding: 2px 0; break-inside: avoid; }
+
+footer.end { margin-top: 18px; padding-top: 8px; border-top: 1px solid var(--rule); font-size: 8pt; color: var(--muted); }
+
+@media (max-width: 640px) {
+  body { font-size: 15px; padding-top: 16px; }
+  .sheet { padding: 22px 18px; }
+  header.top { grid-template-columns: 1fr; }
+  header.top .contact { text-align: left; }
+  .row { grid-template-columns: 1fr; padding: 4px 0; }
+  .cols2 { grid-template-columns: 1fr; }
+}
+@page { size: A4; margin: 15mm 16mm 17mm; }
+@media print {
+  html, body { background: #fff; padding: 0; }
+  .sheet { box-shadow: none; padding: 0; max-width: none; }
+  .webbar { display: none; }
+  a { color: var(--ink); }
+  header.top a, .what a { color: var(--accent); }
+}
+</style>
+</head>
+<body>
+<nav class="webbar" aria-label="Main">
+  <span class="webnav"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="people.html">People</a><a href="outreach.html">Outreach</a><a href="cv.html" aria-current="page">CV</a></span>
+  <a class="pdf" href="Thomas_Blankers_CV.pdf">Download PDF</a>
+</nav>
+<main class="sheet">
+
+<header class="top">
+  <div>
+    <h1>Thomas Blankers</h1>
+    <div class="role">Assistant Professor of Evolutionary Ecology</div>
+  </div>
+  <div class="contact">
+    Institute for Biodiversity and Ecosystem Dynamics<br>
+    University of Amsterdam · Science Park 904, Amsterdam<br>
+    <a href="https://www.thomasblankers.com">thomasblankers.com</a><br>
+    ORCID <a href="https://orcid.org/0000-0002-1893-8537">0000-0002-1893-8537</a>
+  </div>
+</header>
+
+<section>
+  <h2>Positions</h2>
+  <div class="row"><div class="when">2022 – present</div><div class="what"><b>Assistant Professor of Evolutionary Ecology</b>, Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam</div></div>
+  <div class="row"><div class="when">2021 – 2022</div><div class="what"><b>Research Fellow, Origins Center</b>, University of Amsterdam. <span class="sub">With Prof. Astrid T. Groot</span></div></div>
+  <div class="row"><div class="when">2018 – 2020</div><div class="what"><b>Marie Curie Postdoctoral Fellow</b>, University of Amsterdam. <span class="sub">With Prof. Astrid T. Groot</span></div></div>
+  <div class="row"><div class="when">2016 – 2018</div><div class="what"><b>Postdoctoral Associate</b>, Department of Neurobiology and Behavior, Cornell University, Ithaca, NY, USA. <span class="sub">With Prof. Kerry L. Shaw</span></div></div>
+  <div class="row"><div class="when">2012 – 2016</div><div class="what"><b>Guest Researcher</b>, Museum für Naturkunde Berlin, Leibniz Institute for Evolution and Biodiversity Science. <span class="sub">GENART project (functional genomics of speciation)</span></div></div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="row"><div class="when">2016</div><div class="what"><b>PhD</b>, Humboldt-Universität zu Berlin, <i>summa cum laude</i>. Thesis: <i>Acoustic communication, sexual selection, and speciation in field crickets.</i> <span class="sub">Supervisor: Prof. R. Matthias Hennig</span></div></div>
+  <div class="row"><div class="when">2011</div><div class="what"><b>MSc Biological Sciences</b> (Ecology and Evolution), University of Amsterdam, <i>cum laude</i>
+    <div class="sub">Research project (60 EC), Stony Brook University, NY: <i>Adaptive radiation and morphological diversification in salamanders and lizards.</i> Supervisors: Prof. John J. Wiens, Prof. Steph B. Menken</div>
+    <div class="sub">Research project (30 EC), VU Amsterdam: <i>Nutrient signaling: genomics underlying lipid metabolism pathways in the parasitoid wasp Nasonia vitripennis.</i> Supervisors: Dr. Merijn Kant, Prof. Jacintha Ellers, Dr. Bertanne Visser</div></div></div>
+  <div class="row"><div class="when">2008</div><div class="what"><b>BSc Biology</b>, University of Amsterdam
+    <div class="sub">Research project (18 EC): <i>Adaptive speciation appraised: how disruptive selection forces sympatric populations of the two-spotted spider mite to diversify.</i> Supervisor: Dr. Martijn Egas</div></div></div>
+</section>
+
+<section>
+  <h2>Funding</h2>
+  <div class="row"><div class="when">2024</div><div class="what"><b>NWA-ORC PRELIFE</b>: Pathways, Reactions, and Environments leading to LIFE (NWA.1630.23.013), <span class="amt">€6,750,000</span>. <span class="sub">Co-applicant, partner on two subprojects, subquestion leader during consortium forming. Main applicant: Inge Loes ten Kate</span></div></div>
+  <div class="row"><div class="when">2024</div><div class="what"><b>Starters Grant</b>, Dutch Ministry of Education, Culture and Science, <span class="amt">€300,000</span>. <span class="sub">Personal grant</span></div></div>
+  <div class="row"><div class="when">2023</div><div class="what"><b>EU COST Action CA22102 E-NICHE</b>: European Network in Chemical Ecology, <span class="amt">€600,000</span>. <span class="sub">Co-applicant, working group leader. Main applicant: Anne-Geneviève Bagnères</span></div></div>
+  <div class="row"><div class="when">2022</div><div class="what"><b>NWO NWA small project</b> 1418.22.013, <span class="amt">€300,000</span>. <span class="sub">Subproject leader; €100k to our project, co-applied with Astrid T. Groot and Sander G. van Doorn. Main applicant: Pedro Russo</span></div></div>
+  <div class="row"><div class="when">2020</div><div class="what"><b>NWO NWA small project</b> 1418.20.026, <span class="amt">€150,000</span>. <span class="sub">Subproject leader; €50k to our project, co-applied with Karen Bisschop and the PIs of the Origins Center "predicting evolution" game changer. Main applicant: Inge Loes ten Kate</span></div></div>
+  <div class="row"><div class="when">2018</div><div class="what"><b>Marie Skłodowska-Curie Individual Fellowship</b>, <span class="amt">€181,000</span></div></div>
+  <div class="row"><div class="when">2011</div><div class="what">Stichting Dr. Hendrik Muller's Vaderlandsch Fonds, <span class="amt">€700</span> · Amsterdams Universiteitsfonds, <span class="amt">€500</span></div></div>
+</section>
+
+<section>
+  <h2>Publications</h2>
+  <p class="note">‡ shared first authorship · * BSc/MSc student contribution · Full list with links at thomasblankers.com</p>
+  <ol class="pubs">
+    <li><div><span class="ttl">Do the benefits of hybridization outweigh the costs under conditions of global change?</span><br>Krapf, P., <span class="me">Blankers, T.</span> &amp; Kulmuni, J. 2026. <span class="src">Preprint, EcoEvoRxiv. <a href="https://doi.org/10.32942/X2795S">doi:10.32942/X2795S</a></span></div></li>
+    <li><div><span class="ttl">Additive effects of environmental and demographic variation shape the repeatability of evolution across replicated experiments.</span><br>Bisschop, K., Wortel, M.T., Kraaijeveld, K., Mariën, J., Rathmann, I., … Groot, A.T., Visser, M.E. &amp; <span class="me">Blankers, T.</span> 2026. <span class="src"><i>Evolution Letters</i> 10: 382–395. <a href="https://doi.org/10.1093/evlett/qrag017">doi:10.1093/evlett/qrag017</a></span></div></li>
+    <li><div><span class="ttl">The impact of environmental pollution on dragonflies and damselflies (Odonata) and the role of climate change as an interactive stressor.</span><br>Guerra, D., <span class="me">Blankers, T.</span>, Kraak, M.H.S. &amp; Burdfield-Steel, E.R. 2026. <span class="src"><i>Environmental Toxicology and Chemistry</i> 45: 2056–2090. <a href="https://doi.org/10.1093/etojnl/vgag069">doi:10.1093/etojnl/vgag069</a></span></div></li>
+    <li><div><span class="ttl">Resource limitation reveals that high acetate levels in <i>Heliothis subflexa</i> sex pheromone blend are associated with reduced fitness.</span><br>Fruitet, E., De Jong, R., <span class="me">Blankers, T.</span>, Groot, A.T. &amp; Burdfield-Steel, E.R. 2026. <span class="src"><i>Journal of Evolutionary Biology</i> 39: 137–147. <a href="https://doi.org/10.1093/jeb/voaf126">doi:10.1093/jeb/voaf126</a></span></div></li>
+    <li><div><span class="ttl">European chemical ecologists translate the language of life into sustainability.</span><br>Verheggen, F., Allmann, S., Stopka, P., Pappas, M., Avila, C., Prado, S., Romano, G., <span class="me">Blankers, T.</span>, Vanderplanck, M., Colazza, S. &amp; Bagnères, A.G. 2024. <span class="src"><i>Entomologia Generalis</i> 44: 477–478. <a href="https://doi.org/10.1127/entomologia/2024/2729">doi:10.1127/entomologia/2024/2729</a></span></div></li>
+    <li><div><span class="ttl">The biogeographic and evolutionary processes shaping population divergence in <i>Laupala</i>.</span><br><span class="me">Blankers, T.</span> &amp; Shaw, K.L. 2024. <span class="src"><i>Molecular Ecology</i> 33: e17444. <a href="https://doi.org/10.1111/mec.17444">doi:10.1111/mec.17444</a></span></div></li>
+    <li><div><span class="ttl">The evolutionary importance of intraspecific variation in sexual communication across sensory modalities.</span><br>Groot, A.T., <span class="me">Blankers, T.</span>, Halfwerk, W. &amp; Burdfield-Steel, E. 2024. <span class="src"><i>Annual Review of Entomology</i> 69: 21–40. <a href="https://doi.org/10.1146/annurev-ento-030223-111608">doi:10.1146/annurev-ento-030223-111608</a></span></div></li>
+    <li><div><span class="ttl">Quantitative trait loci underlying a speciation phenotype.</span><br>Waller, W.H.*, <span class="me">Blankers, T.</span>, Xu, M. &amp; Shaw, K.L. 2023. <span class="src"><i>Insect Molecular Biology</i> 32: 592–602. <a href="https://doi.org/10.1111/imb.12858">doi:10.1111/imb.12858</a></span></div></li>
+    <li><div><span class="ttl">Towards evolutionary predictions: current promises and challenges.</span><br>Wortel, M.T., Agashe, D., Bailey, S.F., Bank, C., Bisschop, K., <span class="me">Blankers, T.</span>, … Pennings, P.S. 2023. <span class="src"><i>Evolutionary Applications</i> 16: 3–21. <a href="https://doi.org/10.1111/eva.13513">doi:10.1111/eva.13513</a></span></div></li>
+    <li><div><span class="ttl">Population bottleneck has only marginal effect on fitness evolution and its repeatability in dioecious <i>Caenorhabditis elegans</i>.</span><br>Bisschop, K.‡, <span class="me">Blankers, T.</span>‡, Mariën, J., Wortel, M.T., Egas, M., Groot, A.T., Visser, M.E. &amp; Ellers, J. 2022. <span class="src"><i>Evolution</i> 76: 1896–1904. <a href="https://doi.org/10.1111/evo.14556">doi:10.1111/evo.14556</a></span></div></li>
+    <li><div><span class="ttl">Experimental evolution of a pheromone signal.</span><br><span class="me">Blankers, T.</span>, Fruitet, E., Burdfield-Steel, E. &amp; Groot, A.T. 2022. <span class="src"><i>Ecology and Evolution</i> 12: e8941. <a href="https://doi.org/10.1002/ece3.8941">doi:10.1002/ece3.8941</a></span></div></li>
+    <li><div><span class="ttl">Sex pheromone signal and stability covary with fitness.</span><br><span class="me">Blankers, T.</span>, Lievers, R., Plata, C.*, van Wijk, M., van Veldhuizen, D. &amp; Groot, A.T. 2021. <span class="src"><i>Royal Society Open Science</i> 8: 210180. <a href="https://doi.org/10.1098/rsos.210180">doi:10.1098/rsos.210180</a></span></div></li>
+    <li><div><span class="ttl">Parallel genomic architecture underlies repeated sexual signal divergence in Hawaiian <i>Laupala</i> crickets.</span><br><span class="me">Blankers, T.</span>, Oh, K.P. &amp; Shaw, K.L. 2019. <span class="src"><i>Proceedings of the Royal Society B</i> 286: 20191479. <a href="https://doi.org/10.1098/rspb.2019.1479">doi:10.1098/rspb.2019.1479</a></span></div></li>
+    <li><div><span class="ttl">Physical linkage and mate preference generate linkage disequilibrium for behavioral isolation in two parapatric crickets.</span><br><span class="me">Blankers, T.</span>‡, Berdan, E.L.‡, Hennig, R.M. &amp; Mayer, F. 2019. <span class="src"><i>Evolution</i> 73: 777–791. <a href="https://doi.org/10.1111/evo.13706">doi:10.1111/evo.13706</a></span></div></li>
+    <li><div><span class="ttl">The genomic architecture of a rapid island radiation: recombination rate variation, chromosome structure, and genome assembly of the Hawaiian cricket <i>Laupala</i>.</span><br><span class="me">Blankers, T.</span>, Oh, K.P., Bombarely, A. &amp; Shaw, K.L. 2018. <span class="src"><i>Genetics</i> 209: 1329–1344. <a href="https://doi.org/10.1534/genetics.118.300894">doi:10.1534/genetics.118.300894</a></span></div></li>
+    <li><div><span class="ttl">The genetics of a behavioral speciation phenotype in an island system.</span><br><span class="me">Blankers, T.</span>, Oh, K.P. &amp; Shaw, K.L. 2018. <span class="src"><i>Genes</i> 9: 346. <a href="https://doi.org/10.3390/genes9070346">doi:10.3390/genes9070346</a></span></div></li>
+    <li><div><span class="ttl">Codivergence but limited covariance of wing shape and calling song structure in field crickets (<i>Gryllus</i>).</span><br><span class="me">Blankers, T.</span>, Block, R.* &amp; Hennig, R.M. 2018. <span class="src"><i>Evolutionary Biology</i> 45: 144–155. <a href="https://doi.org/10.1007/s11692-017-9439-2">doi:10.1007/s11692-017-9439-2</a></span></div></li>
+    <li><div><span class="ttl">Demography and selection shape transcriptomic divergence in field crickets.</span><br><span class="me">Blankers, T.</span>, Vilaça, S.T., Waurick, I., Gray, D.A., Hennig, R.M., Mazzoni, C.J., Mayer, F. &amp; Berdan, E.L. 2018. <span class="src"><i>Evolution</i> 72: 553–567. <a href="https://doi.org/10.1111/evo.13435">doi:10.1111/evo.13435</a></span></div></li>
+    <li><div><span class="ttl">Multivariate phenotypic evolution: divergent acoustic signals and sexual selection in <i>Gryllus</i> field crickets.</span><br><span class="me">Blankers, T.</span>, Gray, D.A. &amp; Hennig, R.M. 2017. <span class="src"><i>Evolutionary Biology</i> 44: 43–55. <a href="https://doi.org/10.1007/s11692-016-9388-1">doi:10.1007/s11692-016-9388-1</a></span></div></li>
+    <li><div><span class="ttl">Multivariate female preference tests reveal latent perceptual biases.</span><br>Gray, D.A., <span class="me">Blankers, T.</span> &amp; Hennig, R.M. 2016. <span class="src"><i>Proceedings of the Royal Society B</i> 283: 20161972. <a href="https://doi.org/10.1098/rspb.2016.1972">doi:10.1098/rspb.2016.1972</a></span></div></li>
+    <li><div><span class="ttl">Acoustic communication, sexual selection, and speciation in field crickets.</span><br><span class="me">Blankers, T.</span> 2016. <span class="src">PhD thesis, Humboldt-Universität zu Berlin. <a href="https://edoc.hu-berlin.de/handle/18452/18205">edoc.hu-berlin.de/handle/18452/18205</a></span></div></li>
+    <li><div><span class="ttl">A genes eye view of ontogeny: de novo assembly and profiling of the <i>Gryllus rubens</i> transcriptome.</span><br>Berdan, E.L., <span class="me">Blankers, T.</span>, Waurick, I., Mazzoni, C.J. &amp; Mayer, F. 2016. <span class="src"><i>Molecular Ecology Resources</i> 16: 1478–1490. <a href="https://doi.org/10.1111/1755-0998.12530">doi:10.1111/1755-0998.12530</a></span></div></li>
+    <li><div><span class="ttl">Divergence in male cricket song and female preference functions in three allopatric sister species.</span><br>Hennig, R.M., <span class="me">Blankers, T.</span> &amp; Gray, D.A. 2016. <span class="src"><i>Journal of Comparative Physiology A</i> 202: 347–360. <a href="https://doi.org/10.1007/s00359-016-1083-2">doi:10.1007/s00359-016-1083-2</a></span></div></li>
+    <li><div><span class="ttl">Phenotypic variation and covariation indicate high evolvability of acoustic communication in crickets.</span><br><span class="me">Blankers, T.</span>, Lübke, A.K.* &amp; Hennig, R.M. 2015. <span class="src"><i>Journal of Evolutionary Biology</i> 28: 1656–1669. <a href="https://doi.org/10.1111/jeb.12686">doi:10.1111/jeb.12686</a></span></div></li>
+    <li><div><span class="ttl">Conservation of multivariate female preference functions and preference mechanisms in three species of trilling field crickets.</span><br><span class="me">Blankers, T.</span>, Hennig, R.M. &amp; Gray, D.A. 2015. <span class="src"><i>Journal of Evolutionary Biology</i> 28: 630–641. <a href="https://doi.org/10.1111/jeb.12599">doi:10.1111/jeb.12599</a></span></div></li>
+    <li><div><span class="ttl">Contrasting global-scale evolutionary radiations: phylogeny, diversification, and morphological evolution in the major clades of iguanian lizards.</span><br><span class="me">Blankers, T.</span>, Townsend, T.M., Pepe, K., Reeder, T.W. &amp; Wiens, J.J. 2013. <span class="src"><i>Biological Journal of the Linnean Society</i> 108: 127–143. <a href="https://doi.org/10.1111/j.1095-8312.2012.01988.x">doi:10.1111/j.1095-8312.2012.01988.x</a></span></div></li>
+    <li><div><span class="ttl">Ecological radiation with limited morphological diversification in salamanders.</span><br><span class="me">Blankers, T.</span>, Adams, D.C. &amp; Wiens, J.J. 2012. <span class="src"><i>Journal of Evolutionary Biology</i> 25: 634–646. <a href="https://doi.org/10.1111/j.1420-9101.2012.02458.x">doi:10.1111/j.1420-9101.2012.02458.x</a></span></div></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Teaching</h2>
+  <p class="note">University Teaching Qualification (BKO) awarded 8 February 2024</p>
+  <div class="row"><div class="when">2025 – present</div><div class="what"><b>Track coordinator (backstop)</b>, MSc Biological Sciences, General Biology track</div></div>
+  <div class="row"><div class="when">2022</div><div class="what"><b>Course design</b>: Current Topics in Biology, MSc Biological Sciences, General Biology track</div></div>
+  <h3>Courses</h3>
+  <div class="row"><div class="when">2025 – present</div><div class="what">Evolution of Plasticity and Learning <span class="sub">· lecturer</span></div></div>
+  <div class="row"><div class="when">2024 – present</div><div class="what">Analysis &amp; Modeling Lab, MSc Earth Sciences <span class="sub">· module design, lecturer</span></div></div>
+  <div class="row"><div class="when">2024 – present</div><div class="what">Psychobiologie Literature Review <span class="sub">· advisor</span></div></div>
+  <div class="row"><div class="when">2023 – present</div><div class="what">Van Neuron tot Gedrag <span class="sub">· lecturer</span></div></div>
+  <div class="row"><div class="when">2022 – present</div><div class="what">Current Topics in Biology, MSc Biological Sciences <span class="sub">· coordinator, lecturer</span></div></div>
+  <div class="row"><div class="when">2022 – 2024</div><div class="what">Keystone Project II: The Resilient Environment, BSc Biology <span class="sub">· scientific advisor</span></div></div>
+  <div class="row"><div class="when">2020 – present</div><div class="what">Evolutiebiologie, BSc Biology <span class="sub">· lecturer</span></div></div>
+  <div class="row"><div class="when">2019 – present</div><div class="what">Neurobiology and Behavior, BSc Biology <span class="sub">· lecturer</span></div></div>
+  <div class="row"><div class="when">2019 – present</div><div class="what">Ecogenomics, BSc Biology <span class="sub">· lecturer</span></div></div>
+  <div class="row"><div class="when">2019 – 2020</div><div class="what">Evolution and Behavior, BSc Biology <span class="sub">· lecturer</span></div></div>
+  <h3>Earlier teaching</h3>
+  <div class="row"><div class="when">2013 – 2015</div><div class="what">Teaching assistant, Humboldt-Universität zu Berlin: MSc Bioacoustics (2014, 2015); BSc Aggressive Behavior (2013–2015)</div></div>
+  <div class="row"><div class="when">2010 – 2012</div><div class="what">Teaching assistant, University of Amsterdam: BSc Evolutionary Genetics (2012), Genetics and Evolution (2010); development of evolutionary genetics practicals for undergraduates (2012)</div></div>
+  <div class="row"><div class="when">2004 – 2016</div><div class="what"><span class="sub">Homework class teacher, Het 4e Gymnasium Amsterdam (2015–2016); homework tutor, StudentsPlus (2008–2009); course in life-sciences education, UvA (2007, 12 EC); sailing and windsurfing instructor, WSC Sloterplas (2004–2012)</span></div></div>
+</section>
+
+<section>
+  <h2>Supervision</h2>
+  <h3>PhD students</h3>
+  <div class="row"><div class="when">2025 – present</div><div class="what">Pietro Gadaleta <span class="sub">· University of Amsterdam</span></div></div>
+  <div class="row"><div class="when">2024 – present</div><div class="what">Jiajia Zhao <span class="sub">· University of Amsterdam</span></div></div>
+  <div class="row"><div class="when">2018 – 2023</div><div class="what">Elise Fruitet <span class="sub">· University of Amsterdam, defended 27 September 2023</span></div></div>
+  <div class="row"><div class="when">2016 – 2022</div><div class="what">W. Hayden Waller <span class="sub">· Cornell University, defended 16 September 2022</span></div></div>
+  <h3>BSc, MSc and applied-university students</h3>
+  <div class="row"><div class="when">2025/26</div><div class="what">Moya Lieffering (MSc, Leiden), Jesper Zonneveld (HBO, Hogeschool Leiden), Stan van Dijk (MSc), Octavio Cruces Guarderrama (MSc), Jeppe Vernooij (MSc)</div></div>
+  <div class="row"><div class="when">2024/25</div><div class="what">Charissa Claessens (MSc), Madelon Grim (MSc), Alex McKenna (MSc, Univ. Lille), Finn Verhoef (MSc), Daniel Nijman, Michelle Steenbergen, Monica Mooijer, Miel Houtenbos, Mattis Steenweg, Borai Lodewijk, Sophia Mulder (BSc), Maarten Ooijevaar (Leiden Univ. of Applied Sciences)</div></div>
+  <div class="row"><div class="when">2023/24</div><div class="what">Ellie Willson (MSc), Emma Diepeveen (MSc), Ihsen Lecat (MSc, Univ. Lille)</div></div>
+  <div class="row"><div class="when">2022/23</div><div class="what">Regina Marquez (MSc), Eléa Cavigneaux (MSc), Erdem Eren (BSc, Türkiye)</div></div>
+  <div class="row"><div class="when">2021/22</div><div class="what">Arie Ebbenhorst (Aeres Univ. of Applied Sciences), Jerry Schouten (BSc), Canberk Köroğlu (BSc, Gebze Technical University), Lotta Vaskimo (MSc, Leiden)</div></div>
+  <div class="row"><div class="when">2020/21</div><div class="what">Eline de Vries (MSc), Wout van der Heide (MSc, UvA &amp; Cornell), Ekaterine Kikodze (BSc, Radboud University), Luka Rieger (MSc)</div></div>
+  <div class="row"><div class="when">2018 – 2020</div><div class="what">Thomas Rietbergen, Max Boot, Robin Moene (BSc), Arlet Culhaci (Leiden Univ. of Applied Sciences)</div></div>
+  <div class="row"><div class="when">2013 – 2014</div><div class="what">Carolin Geelhaar (MSc), Anna Lübke (BSc), Rafael Block (BSc) <span class="sub">· Humboldt-Universität zu Berlin</span></div></div>
+  <p class="note" style="margin-top:4px">University of Amsterdam unless stated otherwise.</p>
+</section>
+
+<section>
+  <h2>Invited and contributed talks</h2>
+  <p class="note">Talks marked <span class="tag">Talk</span>; other entries are conference contributions.</p>
+  <ul class="talks">
+    <li><span class="tag">Talk</span>Repeatability of evolution is additively affected by environmental and demographic variation. <span class="sub">ESEB 2025</span></li>
+    <li>Eco-evolutionary feedbacks in <i>C. elegans</i>–microbe interactions. <span class="sub">ESEB 2025</span></li>
+    <li><span class="tag">Talk</span>De zoektocht naar buitenaards leven: de (on)begrensde mogelijkheden van leven op aarde. <span class="sub">KNAW symposium 2025</span></li>
+    <li><span class="tag">Keynote</span>The role of behavior in shaping emergent ecological and evolutionary properties. <span class="sub">Netherlands Society for Behavioural Biology 2024</span></li>
+    <li><span class="tag">Talk</span>Eco-evolutionary dynamics in <i>C. elegans</i>–microbe interactions. <span class="sub">WUR Laboratory of Genetics seminar 2024; EvoWorm 2024</span></li>
+    <li><span class="tag">Talk</span>Boundaries on evolutionary predictions from selection and drift. <span class="sub">NWO Life 2024</span></li>
+    <li><span class="tag">Talk</span>Limits to evolutionary predictability through uncertainty in selection and drift. <span class="sub">NLSEB 2024</span></li>
+    <li><span class="tag">Talk</span>The predictability of evolution. <span class="sub">Lorentz Workshop "Evolution of Complex Contemporary Life" 2024; Origins Center Conference 2023</span></li>
+    <li><span class="tag">Talk</span>Universal patterns in speciation dynamics. <span class="sub">NLSEB 2023</span></li>
+    <li><span class="tag">Talk</span>Synthesizing causes and consequences of variation across sexual communication systems. <span class="sub">NWO Life 2023</span></li>
+    <li><span class="tag">Talk</span>Variation and function in sexual signal components. <span class="sub">Entomology Day 2022</span></li>
+    <li>Experimental evolution of a pheromone signal. <span class="sub">ESEB 2022</span></li>
+    <li><span class="tag">Talk</span>Predictability of experimental evolution in <i>C. elegans</i>. <span class="sub">NLSEB 2022</span></li>
+    <li><span class="tag">Talk</span>Experimental host–microbiome evolution in <i>C. elegans</i>. <span class="sub">NWO Life 2022</span></li>
+    <li><span class="tag">Talk</span>Genetic, phenotypic, and biogeographic perspectives on population divergence in a Hawaiian cricket. <span class="sub">ESEB satellite symposium on reproductive isolation 2021</span></li>
+    <li><span class="tag">Talk</span>The selection response of a multicomponent sexual signal. <span class="sub">Evolution (SSE) 2021</span></li>
+    <li><span class="tag">Talk</span>Plasticity, variation, and constraint in sex pheromone signals. <span class="sub">NLSEB 2021</span></li>
+    <li><span class="tag">Talk</span>Convergent gut microbiota as a signature of non-adaptive speciation. <span class="sub">NAEM 2021</span></li>
+    <li><span class="tag">Talk</span>The predictability of genetic adaptation. <span class="sub">Origins Center Conference 2021</span></li>
+    <li><span class="tag">Talk</span>The evolution of sex pheromones. <span class="sub">Netherlands Entomological Society, Ede 2019</span></li>
+    <li>Parallel genetics of repeated sexual signal divergence. <span class="sub">ESEB, Turku 2019</span></li>
+    <li>Evolution of sex pheromone communication in response to artificial selection. <span class="sub">NLSEB, Ede 2019</span></li>
+    <li><span class="tag">Talk</span>A rapid radiation of flightless crickets in Hawaii. <span class="sub">Netherlands Entomological Society, Ede 2018</span></li>
+    <li>Parallel genetic architectures for a behavioral speciation phenotype. <span class="sub">ESEB, Montpellier 2018</span></li>
+    <li><span class="tag">Talk</span>Convergence and constraints in behavioral isolation: a tale of two crickets. <span class="sub">NBB symposium, Cornell University 2017</span></li>
+    <li><span class="tag">Talk</span>The genomic architecture of repeated sexual signal divergence. <span class="sub">Evolution, Portland 2017</span></li>
+    <li>The geographic context of speciation in crickets. <span class="sub">Evolution, Portland 2017</span></li>
+    <li><span class="tag">Talk</span>Sexual selection, population divergence, and the genomic mosaic of local evolutionary histories. <span class="sub">EvoDay, Cornell Lab of Ornithology 2017</span></li>
+    <li><span class="tag">Talk</span>Speciation islands? Behavioral and genomic divergence along a spatio-temporal cline. <span class="sub">NBB symposium, Cornell University 2016</span></li>
+    <li><span class="tag">Talk</span>Population genetics becomes population genomics: what the 'omics era means for evolutionary biology; and Divergence in acoustic and chemical mate signaling genes after speciation with gene flow in field crickets. <span class="sub">BeGenDiv, Berlin 2015</span></li>
+    <li>Patterns of transcriptomic divergence and demographic history in field crickets. <span class="sub">ESEB, Lausanne 2015</span></li>
+    <li><span class="tag">Talk</span>The genetic architecture of calling song and song preference traits in <i>Gryllus rubens</i> and <i>G. texensis</i>. <span class="sub">Orthopteran Bioacoustics Meeting, Zingst 2015</span></li>
+    <li>Premating reproductive isolation between two closely related cricket species. <span class="sub">ESEB, Lisbon 2013</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Service and leadership</h2>
+  <h3>Boards and committees</h3>
+  <div class="cols2">
+    <div>
+      <div class="row"><div class="when">Steering committee</div><div class="what">Netherlands Society for Evolutionary Biology (NLSEB)</div></div>
+      <div class="row"><div class="when">Steering committee</div><div class="what">Dutch Origins Center</div></div>
+      <div class="row"><div class="when">Steering committee</div><div class="what">Amsterdam Center for Origins of Life (AMCOOL)</div></div>
+    </div>
+    <div>
+      <div class="row"><div class="when">Mgmt. committee</div><div class="what">COST European Network in Chemical Ecology (E-NICHE)</div></div>
+      <div class="row"><div class="when">Member</div><div class="what">UvA Scientific Advisory Committee</div></div>
+      <div class="row"><div class="when">Member</div><div class="what">European Society for Evolutionary Biology</div></div>
+    </div>
+  </div>
+  <h3>Meetings and workshops organized</h3>
+  <div class="row"><div class="when">2026</div><div class="what">Origins Center annual meeting</div></div>
+  <div class="row"><div class="when">2024 – 2025</div><div class="what">E-NICHE COST meetings and workshops: communication strategy (Amsterdam, Feb 2024), social media communication (Prague, Jul 2024), career development in chemical ecology (May 2025), annual meeting (Évora, Jun 2025)</div></div>
+  <div class="row"><div class="when">2022 – present</div><div class="what">Host, weekly institute seminar ("Soup lunch"), IBED</div></div>
+  <div class="row"><div class="when">2021</div><div class="what">Quantitative Trait Mapping Workshop, Swammerdam Institute for Life Sciences, UvA</div></div>
+  <div class="row"><div class="when">2020</div><div class="what">Co-convener, Netherlands Annual Ecology Meeting</div></div>
+  <div class="row"><div class="when">2015</div><div class="what">Co-organizer, Bioacoustics meeting, Zingst, Germany</div></div>
+  <h3>Peer review</h3>
+  <p>About twice as many reviews per year as papers (co-)authored, for journals including <i>Evolution, Evolution Letters, Journal of Evolutionary Biology, Molecular Ecology, Proceedings of the Royal Society B, Trends in Ecology and Evolution, Ecology and Evolution, Behavioral Ecology and Sociobiology, Biological Journal of the Linnean Society, Zoological Journal of the Linnean Society, Ecological Entomology, Entomologia Experimentalis et Applicata, Systematic Entomology, Journal of Insect Science, Contributions to Zoology, Genes, PLOS ONE, F1000, PCI Evolutionary Biology</i> and Axios Review.</p>
+</section>
+
+<section>
+  <h2>Outreach and media</h2>
+  <div class="row"><div class="when">2025</div><div class="what">KNAW symposium <a href="https://www.knaw.nl/bijeenkomsten/de-zoektocht-naar-buitenaards-leven">De zoektocht naar buitenaards leven</a> · 360° VR lab video with Smart VR Lab (<a href="https://youtu.be/EDZI5rWJFB0">YouTube</a>) · media interviews for <a href="https://www.eoswetenschap.eu/ruimte/zijn-ruimtevaartuigen-te-steriel-meer-microben-kunnen-astronauten-gezonder-maken">EOS Wetenschap</a> and <a href="https://www.nu.nl/opmerkelijk/6369533/uitgestorven-dodo-na-300-jaar-terug-extreem-duur-en-inefficient.html">nu.nl</a> · Wetenschapsweekend Science Park · Meesterproef supervision, Maris College Den Haag</div></div>
+  <div class="row"><div class="when">2023 – 2025</div><div class="what">E-NICHE <a href="https://www.youtube.com/@TheENICHEchannel">YouTube channel</a> on chemical ecology</div></div>
+  <div class="row"><div class="when">2024</div><div class="what">ExpeditieNext Zutphen, Origins Center stand · Wetenschapsweekend Science Park</div></div>
+  <div class="row"><div class="when">2023</div><div class="what"><a href="https://www.originscenter.nl/nl/podcast/aflevering-5-vertellen-universele-evolutiewetten-hoe-buitenaards-leven-er-uit-zal-zien/">Origins Center podcast</a> "Over leven in het heelal", episode 5 · <a href="https://blog.theaga.org/evolutionary-forecasting-how-predictable-is-evolution/">American Genetic Association blog</a> · ExpeditieNext Middelburg · Onderzoeker voor de klas, Gemeentelijk Gymnasium Hilversum</div></div>
+  <div class="row"><div class="when">2022</div><div class="what">Boekenfest flash lecture "De geur van liefde", Oudemanhuispoort</div></div>
+  <div class="row"><div class="when">2021</div><div class="what">Radio interview, NPO Radio 1 <i>Fris</i>, on human chemical ecology · interview nu.nl, <a href="https://www.nu.nl/advertorial/advertorial-nationale-wetenschapsagenda/6172093/kunnen-we-evolutie-op-lange-termijn-voorspellen.html">Kunnen we evolutie op lange termijn voorspellen?</a> · primary school outreach, De Vuurvogel, Uithoorn</div></div>
+  <div class="row"><div class="when">2014 – 2019</div><div class="what">Betadag Regius College and school visit at Science Park Amsterdam (2019) · Amsterdam Green Campus workshop on energy transition (2019) · EEB &amp; NBB Open Days, Cornell (2016, 2017) · Lange Nacht der Wissenschaften, Museum für Naturkunde Berlin (2014)</div></div>
+</section>
+
+<section>
+  <h2>Skills and languages</h2>
+  <div class="cols2">
+    <div class="row"><div class="when">Programming</div><div class="what">R, Python, Bash</div></div>
+    <div class="row"><div class="when">Languages</div><div class="what">Dutch (native), English (C2), German (C1), Spanish (B2)</div></div>
+  </div>
+</section>
+
+<footer class="end">Updated November 2026 · Current version at thomasblankers.com</footer>
+</main>
 </body>
 </html>
